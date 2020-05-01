@@ -1,0 +1,14 @@
+.my-flex {
+  height: 80vh; /* 80% the height of the page */
+  width: 20vw; /* 20% of the width of the page */
+  background-color: lightblue;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.my-flex-child {
+  height: 100px;
+  background-color: orange;
+}

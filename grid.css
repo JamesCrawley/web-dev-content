@@ -1,0 +1,19 @@
+.my-grid {
+  height: 50vh; /* 50% of the height of the page */
+  width: 20vw; /* 20% of the width of the page */
+  background-color: lightblue;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.my-grid-child {
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 30px;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
