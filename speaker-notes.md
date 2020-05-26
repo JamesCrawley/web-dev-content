@@ -13,19 +13,57 @@
 ## Introduction to HTML
 
 - Hyper Text Markup Language
-- NOT a programming language (doesn’t include logic, such as if this… do that, it is purely presentational)
+- As in the name, HTML is a markup language (not a programming/scripting/query) 
+- Used to describe the structure and layout of a webpage
 - Only need a browser and an editor
-- No need for a server (simple file with .html extension)
-- Home page is always index.html (example myPage.com and myPage.com/about)
+- File extension .html or .htm
 
 ### HTML Tags
 
-- The building blocks of a HTML webpage (heading, paragraph, title etc.)
-- Element names surrounded by angle brackets
-- Opening tag and closing tag
+HTML pages are made up of HTML elements (written in the code as tags), which comprise of an opening tag, any amount of content inside, followed by a closing tag. Below is an example of a HTML element
+```
+<div>Hello world!</div>
+```
+
+- `<div>` - The opening HTML tag is the name of the tag surrounded by a pair of angle brackets
+- `Hello world!` - The content inside the `div` tag, this can be text, or more HTML tags
+- `</div>` - The closing tag is the same as the opening tag, but it has a `/` right before the tag name
+
+---
+
+**Some HTML tags don't have a \</closing> tag!**
+
+---
+
+So we know that HTML tags have their name, and the content that we put inside them. They can also have *attributes*, which let the tag do other things. Attributes go in the opening tag, right before the `>` Below is an example of an attribute on a div element with an attribute called `class`, with a value of `my-first-div`
+
+`<div class="my-first-div">Hello world!</div>`
+
+Here is a list of common HTML tags that we'll be using
+
+**div**  
+`<div>Stuff in here</div>`  
+Used to create an area on the page that we can put stuff in, and the most commonly used element in HTML!
+
+**paragraph**  
+`<p>Text in here</p>`  
+Used to put a paragraph of text on a page
+
+**header**  
+`<h1>Text in here</h1>`  
+Used to create a larger piece of text, ranges from `<h1>`, the biggest, to `<h6>`, the smallest 
+
+**input**
+`<input type=""/>`
+Used to create an input on a page for many different types (text, file, checkbox, radio button etc)
+
+**button**
+`<button>Click me!</button>`
+Used to create a button on a page that can trigger JavaScript code
 
 ### Page Structure
 
+All HTML files have a similar structure that they need to be in so that the 
 - Head and body
 - Head – things like page title, metadata (description, key words), links to CSS or JS files
 - Body – the actual elements that are going to display in the browser
@@ -345,9 +383,7 @@ Now that the browser knows that the div is a Flex, we need to decide which way w
 
 ---
 
-**Top Tip**
-
-`flex-direction` has a default value of `row`, so if you want it to be a row, you don't even need to use the `flex-direction` property!
+**`flex-direction` has a default value of `row`, so if you want it to be a row, you don't even need to use the `flex-direction` property!**
 
 ---
 
