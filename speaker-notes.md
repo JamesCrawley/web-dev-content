@@ -37,30 +37,84 @@ So we know that HTML tags have their name, and the content that we put inside th
 
 Here is a list of common HTML tags that we'll be using
 
+---
+
 **div**  
-`<div>Stuff in here</div>`  
+```html
+<div>Stuff in here</div>
+```  
 Used to create an area on the page that we can put stuff in, and the most commonly used element in HTML!
 
+---
+
 **paragraph**  
-`<p>Text in here</p>`  
+```html
+<p>Text in here</p>
+```  
 Used to put a paragraph of text on a page
 
+---
+
 **header**  
-`<h1>Text in here</h1>`  
+```html
+<h1>Text in here</h1>
+```  
 Used to create a larger piece of text, ranges from `<h1>`, the biggest, to `<h6>`, the smallest 
 
+---
+
+**list item**  
+```html
+<li>This is a list item</li>
+```  
+Used to add items to an (un)ordered list
+
+---
+
+**unordered list**  
+```html
+<ul>
+  <li>Flour</li>
+  <li>Water</li>
+  ...
+</ul>
+```  
+Used to create an unordered list of bullet points
+
+---
+
+**ordered list**  
+```html
+<ol>
+  <li>Mix the flour and water together</li>
+  <li>Put in the oven</li>
+  ...
+</ol>
+```  
+Used to create an ordered, numbered list
+
+---
+
 **input**  
-`<input type=""/>`  
+```html
+<input type="text"/>
+```  
 Used to create an input on a page for many different types (text, file, checkbox, radio button etc)
 
+---
+
 **button**  
-`<button>Click me!</button>`  
+```html
+<button>Click me!</button>
+```  
 Used to create a button on a page that can trigger JavaScript code
 
 ---
 
-You can also write comments in HTML files that don't affect anything, they're just there to help you note things down!  
-`<!-- this is a comment! -->`
+**You can also write comments in HTML files that don't affect anything, they're just there to help you note things down!**  
+```html
+<!-- this is a comment! -->
+```
 
 ---
 
@@ -86,6 +140,18 @@ Here is a very basic example of a page
   </body>
 </html>
 ```
+
+### Nesting
+
+HTML elements are nested, meaning that they can be put inside of each other to structure the page in different ways. Below is an example of a few nested HTML elements:
+```html
+<div> <!-- parent element -->
+  <h1>Hello world!</h1> <!-- child element 1 -->
+  <p>Hello world! (but smaller)</p> <!-- child element 2 -->
+</div>
+```
+
+In the example above, the `<div>` has two **children**, `<h1>` and `<p>`. Therefore, the `<h1>` and `<p>` are **siblings**, and the `<div>` is their **parent**.
 
 ## Challenge 1 - HTML
 
@@ -117,7 +183,7 @@ The next thing to do is to link it to your HTML document, the code below goes in
 ### CSS Selectors
 
 CSS uses *selectors* to target parts of a HTML page, and then applies properties to them such as `width`, `height`, `background-color` etc. Below is an example of a typical CSS selector:
-```
+```css
 p {
   background-color: red;
   color: white;
@@ -161,56 +227,24 @@ The code below shows how to apply an ID to a HTML element:
   font-family: 'IBM Plex Sans'
 }
 ```
+
 ---
+
 **In the CSS, `.` is used to identify a class, and `#` is used to identify an ID**
+
 ---
-### The div Tag
-
-- the `<div>` tag defines a division or a section in an HTML document
-- the `<div>` element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript
-- by wrapping a set of paragraph elements into a `<div>` element, we can take advantage of CSS styles and apply a font to all paragraphs at once by applying a font style to the `<div>` tag instead of coding the same style for each paragraph element
-
-### Nesting
-
-- to avoid using too many class or other selectors, we are going to be nesting our css, meaning that we will specify properties to selectors within other selectors, as below:
-
-```html
-<div class="“recipe”">
-  <h1>Chocolate cake</h1>
-  <p>This is my recipe for making chocolate cake</p>
-  <p>This is totally not healthy</p>
-</div>
-```
-
-```css
-.recipe {
-  background-color: #ccc;
-  padding: 10px;
-}
-.recipe h1 {
-  color: #ff0;
-}
-.recipe p {
-  color: red;
-  font-weight: bold;
-}
-```
-
-- this removes the need for classes or IDs on the p and h1 tags
-- by separating selectors with spaces, we are saying “h1 inside the class called recipe is colour #ff0" and “p inside the class called recipe is red and bold”
-- using nesting in css increases the modularity and maintainability of stylesheets
 
 ## Challenge 2 - CSS
 
 - Now style your page, using the following guides:
 
   - The page should have a new font
-  - The Headers should have a different font size
+  - The headers should have a different font size
   - Each different section should have a different background colour
   - The title should be centered on the page
   - Clicking on one element (could be anything) takes you to another webpage (e.g. google.com)
   - The background of the page should either be an image (any image), or a colour gradient.
-  - Using the browser inspector, inspect and modify an element on the fly (change a colour or something idk)
+  - Using the browser inspector, inspect and modify an element on the fly (change a colour or something)
 
 ## Introduction to CSS Grid
 
