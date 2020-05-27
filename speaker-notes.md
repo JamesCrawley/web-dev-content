@@ -12,15 +12,11 @@
 
 ## Introduction to HTML
 
-- Hyper Text Markup Language
-- As in the name, HTML is a markup language (not a programming/scripting/query) 
-- Used to describe the structure and layout of a webpage
-- Only need a browser and an editor
-- File extension .html or .htm
+HTML (Hyper Text Markup Language) is a language that makes up every single website that exists, all it does is tell your browser where to put things on the page. It is very simple in itself, but it can be (and often is) paired with CSS (Cascading Style Sheets) to style the page such as adding colour, changing fonts, the sizing of elements and much more. HTML can also be used with JavaScript to make the page functional and responsive, allowing the developer to program it to perform complex actions such as handle data, communicate with servers and more.
 
 ### HTML Tags
 
-HTML pages are made up of HTML elements (written in the code as tags), which comprise of an opening tag, any amount of content inside, followed by a closing tag. Below is an example of a HTML element
+HTML pages are made up of HTML elements (written in the code as tags), which comprise of an opening tag, any amount of content inside, followed by a closing tag. Below is an example of a HTML element:
 ```
 <div>Hello world!</div>
 ```
@@ -35,7 +31,7 @@ HTML pages are made up of HTML elements (written in the code as tags), which com
 
 ---
 
-So we know that HTML tags have their name, and the content that we put inside them. They can also have *attributes*, which let the tag do other things. Attributes go in the opening tag, right before the `>` Below is an example of an attribute on a div element with an attribute called `class`, with a value of `my-first-div`
+So we know that HTML tags have their name, and the content that we put inside them. They can also have *attributes*, which let the tag do other things. Attributes go in the opening tag, right before the `>` Below is an example of a div element with an attribute called `class`, with a value of `my-first-div`:
 
 `<div class="my-first-div">Hello world!</div>`
 
@@ -53,33 +49,39 @@ Used to put a paragraph of text on a page
 `<h1>Text in here</h1>`  
 Used to create a larger piece of text, ranges from `<h1>`, the biggest, to `<h6>`, the smallest 
 
-**input**
-`<input type=""/>`
+**input**  
+`<input type=""/>`  
 Used to create an input on a page for many different types (text, file, checkbox, radio button etc)
 
-**button**
-`<button>Click me!</button>`
+**button**  
+`<button>Click me!</button>`  
 Used to create a button on a page that can trigger JavaScript code
+
+---
+
+You can also write comments in HTML files that don't affect anything, they're just there to help you note things down!  
+`<!-- this is a comment! -->`
+
+---
 
 ### Page Structure
 
-All HTML files have a similar structure that they need to be in so that the 
-- Head and body
-- Head – things like page title, metadata (description, key words), links to CSS or JS files
-- Body – the actual elements that are going to display in the browser
-- Very basic example of a page:
+All HTML files have a similar structure that they need to be in so that the browser knows how to interpret them
+- `<!DOCTYPE>` tag - telling the browser that this is a HTML document
+- `<html>` tag - telling the browser that all of your webpage content is inside of this tag
+- `<head>` tag – things like page title, metadata (description, key words), links to CSS or JS files go in here, nothing in here is displayed on the page
+- `<body>` tag – everything else; the actual elements that are going to display in the browser go here
+  
+Here is a very basic example of a page
 
 ```html
 <!DOCTYPE html>
-<!--declaration telling the browser that this is a html file-->
 <html>
   <head>
     <title>My Webpage</title>
-    <!-- will show in the tab -->
   </head>
   <body>
     <h1>My First Header</h1>
-    <!-- biggest heading there is, goes down to 6 -->
     <p>My First Paragraph</p>
   </body>
 </html>
@@ -94,53 +96,74 @@ All HTML files have a similar structure that they need to be in so that the
   - An input box, with a button that says “search”
   - An unordered list with some items in it
 
-- The page should also contain the following meta information;
+- The page should also contain the following meta information:
 
   - Charset should be specified as `UTF-8`
   - The page should have a title
 
 ## Introduction to CSS
 
-- styling language, not programming language
-- HTML is used for content, CSS is used for styling of that content
-- simple syntax: selector and properties
-  selector {
-  property1: value;
-  property2: value;
-  }
-- the selector is the element that we are applying properties to
-- best way to load CSS into our HTML is by having a separate CSS file and using a link inside the head of the HTML
-  ```html
-  <head>
-    <link rel="“stylesheet”" href="styles.css" />
-  </head>
-  ```
-- having an external css file separates content from styling and supports reusability
+CSS (Cascasding Style Sheets) is a styling language that is used to style HTML pages to make them much more user friendly and appealing. You will find CSS on pretty much every website that exists as without it they would look **extremely** basic. CSS is used to changethings such as colours, fonts, sizes as well as positioning of elements using margin, padding as well as more complex properties such as grids and flexboxes. CSS is a written in a **very** simple format, making it easy to learn alongside HTML even if you're a beginner!
 
-### Main Selectors
+### Creating a CSS file and linking it to your HTML document
 
-1. element (could be any HTML element: h, p, div, header, footer etc.)
+The first thing you need to do is create a CSS file, call it whatever you want as long as it has the .css file extension, a common name is `styles.css`.
 
-```css
-h1 {
-  color: blue;
+The next thing to do is to link it to your HTML document, the code below goes inside the `<head> </head>` tags in your HTML document, all it does is point to your .css file. Just make sure that the name in `href=""` matches the name of the CSS file you have created!
+```html
+<link rel="“stylesheet”" href="styles.css" />
+```
+
+### CSS Selectors
+
+CSS uses *selectors* to target parts of a HTML page, and then applies properties to them such as `width`, `height`, `background-color` etc. Below is an example of a typical CSS selector:
+```
+p {
+  background-color: red;
+  color: white;
 }
 ```
 
-2. class (lets you select HTML elements based on their class)
+This selector is targeting **every** `<p>` element in our HTML page, and applying the styles inside the selector, making the background colour red and the foreground (text) colour white.
+
+### Classes and IDs
+
+Selectors can target HTML elements as above, but instead of this we usually target elements using classes or IDs. These are a way to target individual elements on a page and create groups for elements that you want to have the same styling. In reality, we only really use classes, the only difference between then being that **a class can be applied to as many elements as you want**, whereas **an ID can only be applied to one element**.
+
+The code below shows how to apply a class to a HTML element:
 
 ```html
-<h1 class="big-header">
-  Title
-</h1>
+<p class="my-paragraph">
+  Hello world!
+</p>
+```
+```css
+.my-paragraph {
+  background-color: lightgrey;
+  color: white;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans'
+}
 ```
 
-- to select elements by class, we need to use a . to tell CSS that this is a class and not an element
-  .big-header {
-  color: blue;
-  }
-- most used selector, great for creating reusable content (example buttons)
+The code below shows how to apply an ID to a HTML element:
 
+```html
+<p id="my-paragraph">
+  Hello world!
+</p>
+```
+```css
+#my-paragraph {
+  background-color: lightgrey;
+  color: white;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans'
+}
+```
+---
+**In the CSS, `.` is used to identify a class, and `#` is used to identify an ID**
+---
 ### The div Tag
 
 - the `<div>` tag defines a division or a section in an HTML document
@@ -224,7 +247,11 @@ Now that we have created our files, you can copy the code below, and paste it in
 </html>
 ```
 
+---
+
 **All of the HTML code that we will be adding will go inbetween the `<body>` and `</body>` tags!**
+
+---
 
 Start by creating a `<div>` tag and giving it a class of `my-grid`
 
