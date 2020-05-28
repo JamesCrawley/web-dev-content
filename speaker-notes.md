@@ -111,6 +111,14 @@ Used to create a button on a page that can trigger JavaScript code
 
 ---
 
+**style**  
+```html
+<style>// CSS goes in here</style>
+```  
+Used to embed CSS styling directly into a HTML document
+
+---
+
 **You can also write comments in HTML files that don't affect anything, they're just there to help you note things down!**  
 ```html
 <!-- this is a comment! -->
@@ -233,6 +241,40 @@ The code below shows how to apply an ID to a HTML element:
 **In the CSS, `.` is used to identify a class, and `#` is used to identify an ID**
 
 ---
+
+### Margin and Padding
+
+Margin and padding are properties in CSS used to create space inside and outside of items. They do a very similar thing, but in slightly different ways.
+
+**Padding** creates space **inside** of a HTML element
+
+**Margin** creates space **outside** of a HTML element
+
+I created a grey square that is 100px wide, put a smaller orange square that is 50px wide inside it, and a 50px green square below it. This is what it looks like without any margin or padding:
+
+![](https://i.imgur.com/nNwrAhG.jpg)
+
+By default, HTML elements sit as far to the top left as they can, if I wanted to move the orange box away from the edge of the grey box, I can add `padding: 10px` to the grey box:
+
+![](https://i.imgur.com/ipczxiQ.jpg)
+
+---
+
+`padding: 10px` adds padding to **all** sides of the grey box, if you only want to add padding to one side you could use `padding-left`, `padding-right`, `padding-top` or `padding-bottom`, this works exactly the same for margin as well!
+
+---
+
+I can use the Chrome DevTools to hover over the grey box to visually see where the padding is, the green outline inside the grey box shows the padding that is pushing the orange box 10px inwards:
+
+![](https://i.imgur.com/888RcXp.jpg)
+
+Now we can move the green box away from the grey box, shown below is the result of adding `margin-bottom: 10px` to the grey box:
+
+![](https://i.imgur.com/Nlc8KNt.jpg)
+
+And if I hover over the grey box again, I can see the 10px of margin that has been added to the bottom of the grey box, shown highlighted in orange:
+
+![](https://i.imgur.com/Xz6e7ea.jpg)
 
 ## Challenge 2 - CSS
 
