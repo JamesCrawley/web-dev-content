@@ -1,4 +1,4 @@
-# Course Content - speaker notes
+# Course Content - Speaker Notes
 
 ## Background on DSA & RPT
 
