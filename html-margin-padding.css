@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.grey-box {
+    /* padding: 10px; */
+    /* margin-bottom: 10px; */
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+}
+
+.orange-box {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+}
+
+.green-box {
+    width: 50px;
+    height: 50px;
+    background-color: limegreen;
+}
