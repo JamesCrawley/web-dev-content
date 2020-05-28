@@ -35,7 +35,7 @@ So we know that HTML tags have their name, and the content that we put inside th
 
 `<div class="my-first-div">Hello world!</div>`
 
-Here is a list of common HTML tags that we'll be using
+Here is a list of common HTML tags that we'll be using:
 
 ---
 
