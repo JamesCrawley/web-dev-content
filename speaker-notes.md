@@ -552,7 +552,12 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     - The name of the variable
     - (Optional) A value to give to the variable
   - How to create a variable:
-  
+  ```js
+  // [const or let] [variable name] = [variable value]
+  const var1 = 100
+  let var2;
+  let var3 = var1
+  ```
     - const (value of variable must be set at variable creation and cant be changed after)
     ```js
     const myConstant = 5 // this can't be changed
@@ -588,20 +593,20 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   myNumber /= 2 // divide myNumber by 2
   console.log(myNumber) // 
   ```
-- ![https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators](Arithmetic operators) (+, -, *, /)
+- ![Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) (+, -, *, /)
   - e.g.
   ```js
   console.log(10 + 4 + 6) // 20
   console.log(6 - 4) // 2
   console.log((50 / 10) * 3) // 15
   ```
-- ![https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators](Comparative operators) (==, !=, ===, !==)
+- ![Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
   - e.g. 
   ```js
   10 == "10" // true
   10 === "10" // false
   ```
-- ![https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators](Relational operators) (<, >, =<, >=)
+- ![Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators) (<, >, =<, >=)
 - conditionals - if/else: (mention booleans)
   - if (thing){
     // do thing
