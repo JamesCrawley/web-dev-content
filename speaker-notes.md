@@ -593,20 +593,20 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   myNumber /= 2 // divide myNumber by 2
   console.log(myNumber) // 
   ```
-- ![Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) (+, -, *, /)
+- [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) (+, -, *, /)
   - e.g.
   ```js
   console.log(10 + 4 + 6) // 20
   console.log(6 - 4) // 2
   console.log((50 / 10) * 3) // 15
   ```
-- ![Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
+- [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
   - e.g. 
   ```js
   10 == "10" // true
   10 === "10" // false
   ```
-- ![Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators) (<, >, =<, >=)
+- [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators) (<, >, =<, >=)
 - conditionals - if/else: (mention booleans)
   - if (thing){
     // do thing
