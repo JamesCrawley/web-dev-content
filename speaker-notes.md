@@ -527,19 +527,87 @@ Add the `justify-content` property to the `my-flex` selector in `flex.css`, and 
 - This will take a bit of time, so please ask any of us for a hand :)
 
 ## Introduction to JavaScript
+JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of the programming language, but there's lots more to be done independently
+- Output to console
+  ```js
+  console.log(1 + 1) // 2
+  console.log("Hello world!") // Hello World!
+  console.log(50 + 50 === 100) // true
+  console.log([1, 2, 4, 5].includes(3)) // false
+  ```
+- Comments
+  - Double forward-slashes start a comment that you can use to annotate and describe your code
+  ```js
+  // this is a comment and won't affect the code in any way!
+  const number = 5
+  console.log(number) // 5
+  
+  // number = 10
+  console.log(number) // 5
+  ```
+- Variables
+  - Variables can be looked at as pockets where you can store data, identified by their unique names
+  - To create a variable you need to know:
+    - Whether to use *const* or *let* (does the variable need to change at any point or not)
+    - The name of the variable
+    - (Optional) A value to give to the variable
+  - How to create a variable:
+  
+    - const (value of variable must be set at variable creation and cant be changed after)
+    ```js
+    const myConstant = 5 // this can't be changed
+    myConstant = "Hello!" // TypeError: Assignment to constant variable.
 
-- JS makes the web interactive. It's _not_ java!
-- We'll teach the basics of the programming language, but there's lots more to be done independently
-- output (console.log), comments, how to access dev tools
-- variable assignment - storing bits of info (const/let)
-- more assignment - ++, +=
-- operators (+/- etc)
-- comparisons - ==, !=, ===, !==, >, <
+    const myName; // SyntaxError: Missing initializer in const declaration
+    ```
+    - let
+    ```js
+    let myVariable = "Hello!"
+    console.log(myVariable) // Hello!
+
+    myVariable = "Hello world!"
+    console.log(myVariable) // Hello World!
+    ```
+    - var (don't use this one anymore)
+- Assignment operators (=, +=, -=, *=, /=)
+  ```js
+  let myNumber = 0;
+  
+  myNumber = 5 // set myNumber to 5
+  console.log(myNumber) // 5
+  
+  myNumber += 7 // add 7 to myNumber
+  console.log(myNumber) // 12
+  
+  myNumber -= 2 // minus 2 from myNumber
+  console.log(myNumber) // 10
+  
+  myNumber *= 5 // multiply myNumber by 5
+  console.log(myNumber) // 50
+  
+  myNumber /= 2 // divide myNumber by 2
+  console.log(myNumber) // 
+  ```
+- ![https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators](Arithmetic operators) (+, -, *, /)
+  - e.g.
+  ```js
+  console.log(10 + 4 + 6) // 20
+  console.log(6 - 4) // 2
+  console.log((50 / 10) * 3) // 15
+  ```
+- ![https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators](Comparative operators) (==, !=, ===, !==)
+  - e.g. 
+  ```js
+  10 == "10" // true
+  10 === "10" // false
+  ```
+- ![https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators](Relational operators) (<, >, =<, >=)
 - conditionals - if/else: (mention booleans)
   - if (thing){
     // do thing
     }
   - else comes after if
+  - else if
 - Arrays and objects
   - basic array declaration
   - objects:
@@ -550,6 +618,7 @@ Add the `justify-content` property to the `my-flex` selector in `flex.css`, and 
     likes: ["dogs", "cats"],
   };
   ```
+  - .forEach() (depending on how confident people are)
 - JS methods - look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
 
 ## Challenge 5 - Javascript Basics
