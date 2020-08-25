@@ -594,25 +594,38 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(myNumber) // 
   ```
 - [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) (+, -, *, /)
-  - e.g.
   ```js
   console.log(10 + 4 + 6) // 20
   console.log(6 - 4) // 2
   console.log((50 / 10) * 3) // 15
   ```
 - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
-  - e.g. 
   ```js
   10 == "10" // true
   10 === "10" // false
   ```
 - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators) (<, >, =<, >=)
-- conditionals - if/else: (mention booleans)
-  - if (thing){
-    // do thing
-    }
-  - else comes after if
-  - else if
+- Conditional operators
+  - These are used to run a block of code depending on the truthiness of an expression
+  ```js
+  if (expression) {
+    // if expression is true, do this
+  } else {
+    // otherwise, do this
+  }
+  ```
+  - Can use any number of *else if* blocks inbetween the *if* and *else*
+  ```js
+  const myName = "James"
+  
+  if (myName === "James") {
+    // run code if name is James
+  } else if (myName === "Collwyn") {
+    // run code if name is Collwyn
+  } else {
+    // run code if name is anything else
+  }
+  ```
 - Arrays and objects
   - basic array declaration
   - objects:
