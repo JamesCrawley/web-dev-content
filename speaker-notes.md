@@ -1053,7 +1053,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   #### Creating an event listener
   ```js
-  // find the submit button by its class
+  // find the submit button by its class of submit-button
   const submitButton = document.querySelector(".submit-button")
   
   // attaching the onButtonClick function to the click event of the button
@@ -1062,11 +1062,12 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // function to run when the button is clicked
   function onButtonClick(e) {
     // the parameter e is automatically passed through to this function
-    // it stores information about the click event
+    // it contains information about the click event
     
-    // this stops the browser from performing its default action
-    // if this button was to submit a form, the default action is to make a HTTP request and reload the page
+    // preventDefault() stops the browser from performing its default action when an event occurs
+    // if this button was to submit a form, the default action is to make a HTTP request and reload the page which we don't want
     e.preventDefault()
+    
     console.log("You have clicked my button!")
   }
   ```
