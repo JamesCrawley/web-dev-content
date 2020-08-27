@@ -1118,15 +1118,15 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
 
 ## Challenge 6 - Including JavaScript on the page, and JavaScript API calls with async/await
-
-- Include some JavaScript directly onto your html page. Make it `console.log()` the word "test".
+- Include some JavaScript directly onto your html page. Make it `console.log()` the word `"test"`.
 - Make an alert box pop up when you open the webpage. Customise the message.
 - Make an alert box pop up when you press a button.
 - Make an element appear on the page when you press a button
+- Use the `async`/`await` syntax to make an API call to the TVMaze API. Hard-code the query to be your favourite TV show. Use a `console.log` to simply print out the results.
 - Create the following user story:
-- Users can enter a TV show and press search. When they do, they will see their query added to a list underneath.
-- Use the `await` syntax to make an API call to the TVMaze API. Hard-code the query to be your favourite TV show. Use a `console.log` to simply print out the results.
+  - Users can enter a TV show and press search. When they do, they will see their query added to a list underneath.
 - Create the following user story:
-- Users can search for a TV show, and be shown a list of matching responses as a list on the page below.
+  - Users can search for a TV show, and be shown a list of matching responses as a list on the page below.
+  - Users can add a show from the list to a seperate list of their favourites.
 - Create the following user story:
-- Users can search for a TV show, and be shown a list of matching responses as a list on the page below. Pressing the star (or similar) icon will add the show to a different list of their favourites.
+  - Users can remove a TV show from their list of favorites
