@@ -21,7 +21,7 @@
     - [Logic Operators](#logic-operators)
   - [Conditional Statements](#conditional-statements)
   - [JS Methods](#js-methods)
-- [Challenge 5 - JavaScript Basics](#challenge-5-javascript-basics)
+- [Challenge 5 - JavaScript Basics](#challenge-5---javascript-basics)
   
 
 ## Background on DSA & RPT
