@@ -971,6 +971,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 
 ### Functions
   - Functions are a named block of code that you write to perform an action, that you can reuse anywhere in your code
+  - They are written by writing the word `function`, followed by a name for the function `sayHello`, a pair of brackets `()`, and a pair of curly braces `{}`
   ```js
   function sayHello() {
     // your functions code goes inbetween the curly braces
