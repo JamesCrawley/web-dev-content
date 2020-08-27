@@ -26,6 +26,7 @@
   - [Functions](#functions)
   - [Including JS in a HTML Page](#including-js-in-a-html-page)
   - [Interacting with the DOM](#interacting-with-the-dom)
+  - [Asynchronous JavaScript](#asynchronous-javascript)
 
 ## Background on DSA & RPT
 
