@@ -20,6 +20,7 @@
     - [Relation Operators](#relational-operators)
     - [Logic Operators](#logic-operators)
   - [Conditional Statements](#conditional-statements)
+  - [Array Functions](#array-functions)
 - [Challenge 5 - JavaScript Basics](#challenge-5---javascript-basics)
   
 
