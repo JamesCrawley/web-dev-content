@@ -949,7 +949,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 - Create a new variable `x`, and assign it the number 20 like so: `const x = "20"`. Add that to one of your previous variables. What do you notice? Why do you think that is?
 - Create an array, filled with names, then use a loop to print out their name & the same message for each one. You should end up with something like "Hey Bill", "Hey Fred", "Hey Sally", etc.
 - Create a variable called age and assign it to your age. Use an if/else statement to tell you if you're allowed to legally drink
-- Create another variable called `likesBeer` and assign it to a boolean (true or false). Modify your existing loop so that if you're over 18 & like beer, it say you can drink. If not, print out a message to say no.
+- Create another variable called `likesBeer` and assign it to a boolean (true or false). Modify your existing if statement so that if you're over 18 & like beer, it says you can drink. If not, print out a message to say no.
 - Using the following object, print out the ID & price of each item.
   ```js
   let items = [
@@ -963,9 +963,9 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 
 - Using the same object, sum the total cost of all items.
 
-  > There's (at least) 2 ways of doing this - if you're looking to stretch yourself, look at a `reduce()` function!
+  > There's (at least) 2 ways of doing this - if you're looking to stretch yourself, look at the `Array.reduce()` function!
 
-- For an additional challenge - write a check for palindrome - taking a variable (such as `const input = "hello there") and returning (outputting) a "true" or "false". If it's the same in reverse it should tell you. e.g inputting "racecar" should output true, but "nope" should be false
+- For an additional challenge - write a check for palindrome - taking a variable (such as `const input = "hello there") and returning (outputting) a `true` or `false`. If it's the same in reverse it should tell you. e.g inputting `"racecar"` should output `true`, but `"nope"` should be `false`
 
 ## Going further with JavaScript
 
