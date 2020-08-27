@@ -528,6 +528,23 @@ Add the `justify-content` property to the `my-flex` selector in `flex.css`, and 
 
 ## Introduction to JavaScript
 JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of the programming language, but there's lots more to be done independently
+- Data types
+  - Data types define the format that a piece of data is in. It can be from one of the folowing (as well as many more)
+    - String: Any form of text
+    ```js
+    const name = "James" // this is a string
+    console.log("My name is " + name) // James
+    ```
+    - Number: Any whole number
+    ```js
+    const age = 20 // this is a number
+    console.log("I am " + age + " years old")
+    ```
+    - Boolean: A true or false value
+    ```js
+    const canIDrive = true
+    console.log(canIDrive ? "Yes!" : "No :(") // we'll explain what this means later
+    ```
 - Output to console
   ```js
   console.log(1 + 1) // 2
@@ -626,9 +643,61 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // run code if name is anything else
   }
   ```
+  - In some situations you might want to have all of this logic on one line, for this you can use ternary expressions
+  ```js
+  const age = 20
+  const canIDrink = age >= 18 ? "Yes" : "No" 
+  // this is literally 'if age is 18 or over, return "Yes", else return "No"'
+  // equivalent to:
+  // if (age >= 18) {
+  //   canIDrink = "Yes"
+  // } else {
+  //   canIDrink = "No"
+  // }
+  
+  console.log(canIDrink) // Yes
+  ```
 - Arrays and objects
-  - basic array declaration
-  - objects:
+  - Arrays are a type of collection, essentially a list of elements
+  - Arrays can contain many different types
+  ```js
+  const myArray = ["Apple", 5, true, "Orange"]
+  ```
+  - Each item in the array is called an *element*, each element has an index (position in the array) starting at 0. Here is how you would index each element of the array:
+  ```js
+  console.log(myArray[0]) // Apple
+  console.log(myArray[2]) // true
+  console.log(myArray[4]) // undefined (index 4, the 5th element doesn't exist)
+  ```
+  - There are many methods you can use to modify arrays:
+  ```js
+  const myArray = [1, 2, 3, 4, 5]
+  
+  // returns the number of items in the array, starting from 1 not 0
+  console.log(myArray.length) // 5
+  
+  // adds the element(s) to the end of the array and returns the new length of the array
+  console.log(myArray.push(6)) // 6 
+  console.log(myArray) // [1, 2, 3, 4, 5, 6]
+  
+  // removes the last element of the array and returns it
+  console.log(myArray.pop()) // 6
+  console.log(myArray) // [1, 2, 3, 4, 5]
+  
+  // adds element(s) to the start of the array and returns the new length of the array
+  console.log(myArray.unshift(0)) // 6
+  console.log(myArray) // [0, 1, 2, 3, 4, 5]
+  
+  // removes the first element of the array and returns it
+  console.log(myArray.shift()) // 0
+  console.log(myArray) // [1, 2, 3, 4, 5]
+  
+  
+  
+  
+  
+  ```
+- objects:
   ```js
   let person = {
     age: 20,
