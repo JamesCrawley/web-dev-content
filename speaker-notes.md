@@ -20,7 +20,6 @@
     - [Relation Operators](#relational-operators)
     - [Logic Operators](#logic-operators)
   - [Conditional Statements](#conditional-statements)
-  - [JS Methods](#js-methods)
 - [Challenge 5 - JavaScript Basics](#challenge-5---javascript-basics)
   
 
@@ -543,11 +542,8 @@ There's one more property we're going to add to our code called `justify-content
 Add the `justify-content` property to the `my-flex` selector in `flex.css`, and try out the values `space-around`, `space-between` and `space-evenly` to see how they make the Flex look.
 
 ## Challenge 4 - CSS Flex
-
 - Using what you've learnt so far about CSS Grid and Flex, make your webpage look like this [example](http://my-tv-favourites.eu-gb.mybluemix.net/)
-
 - Don't worry about any of the functionality yet, we just want to make it look pretty!
-
 - This will take a bit of time, so please ask any of us for a hand :)
 
 ## Introduction to JavaScript
@@ -567,16 +563,11 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
 ### Variables
   - Variables can be looked at as pockets where you can store data, identified by their unique names
-  
   - The data that variables store can be in many different data types (see section below), such as *strings*, *numbers* and *booleans* to name a few
-  
   - Unlike other programming languages, in JavaScript you don't need to tell the code what data types you want your variables to be. This led to the creation of the [TypeScript](https://www.typescriptlang.org/) language by Microsoft
-  
   - To create a variable you need to know:
     - Whether to use *let* or *const* (*let* variables can change, *const* variables can't)
-    
     - The name of the variable (can only contain alphanumeric characters, no symbols)
-    
     - A value to give to the variable (optional for *let*, required for *const*)
     
   - How to create a variable:
@@ -622,11 +613,8 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     
 ### [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
   - Arrays are another data type, they are essentially a list of elements
-  
   - Arrays can contain many different types
-  
   - Each item in the array is called an *element*
-  
   - Arrays are written using square brackets with commas to seperate the elements 
   ```js
   const myArray = ["Apple", 5, true, "Orange"]
@@ -719,7 +707,6 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
 ### [Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Comments)
   - Comments are used to annotate and describe your code
-  
   - Single line comments are written using double forward-slashes
   ```js
   // this is a comment and won't affect the code in any way!
@@ -771,9 +758,11 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
 
 #### [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)
+  - These are used to add values together (and concatenate strings)
   ```js
   // addition (+)
   console.log(10 + 4 + 6) // 20
+  console.log("Hello" + " " + "World!") // Hello World!
 
   // subtraction (-)
   console.log(6 - 4) // 2
@@ -816,6 +805,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
 
 #### [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators)
+  - These are used to compare values based on their size 
   ```js
   // less than operator (<)
   console.log(5 < 8) // true
@@ -835,6 +825,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
 
 #### [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
+  - These are used to compare values based on their truthiness
   ```js
   const myName = "James"
   const myAge = 20
@@ -872,7 +863,6 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
   
   - In some situations you might want to have all of this logic on one line, for this you can use ternary expressions
-  
   - Ternary expressions are written with `?` and `:` like this: `const returnValue = [expression] ? [value if true] : [value if false]`
   ```js
   const age = 20
@@ -888,11 +878,6 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   console.log(canDrink) // Yes
   ```
-  
-  - .forEach() (depending on how confident people are)
-  
-### JS methods 
-  - Look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
 
 ## Challenge 5 - Javascript Basics
 
