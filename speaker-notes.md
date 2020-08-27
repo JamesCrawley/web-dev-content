@@ -539,9 +539,9 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // this is also an expression, but returns the value 19
   9 + 19
   ```
-- Variables & data types
+- Variables
   - Variables can be looked at as pockets where you can store data, identified by their unique names
-  - The data that variables store can be in many different data types, such as *strings*, *numbers* and *booleans* to name a few
+  - The data that variables store can be in many different data types (see section )below, such as *strings*, *numbers* and *booleans* to name a few
   - Unlike other programming languages, in JavaScript you don't need to tell the code what data types you want your variables to be. This led to the creation of the [TypeScript](https://www.typescriptlang.org/) language created by Microsoft
   - To create a variable you need to know:
     - Whether to use *const* or *let* (does the variable need to change at any point or not)
@@ -587,7 +587,72 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     const canIDrive = true
     console.log(canIDrive ? "Yes!" : "No!") // Yes!
     // ^ we'll explain what this means later ^
+    - Array: (see below)
+    - Object: (see below)
     ```
+- [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  - Arrays are a type of collection, essentially a list of elements
+  - Arrays can contain many different types
+  - Each item in the array is called an *element*
+  - Arrays are written using square brackets with commas to seperate the elements 
+  ```js
+  const myArray = ["Apple", 5, true, "Orange"]
+  ```
+  - Each element has an index (position in the array) starting at 0. The first element is index 0, the second is index 1 etc. Here is how you would index each element of the array:
+  ```js
+  console.log(myArray[0]) // Apple
+  console.log(myArray[2]) // true
+  console.log(myArray[4]) // undefined (index 4, the 5th element doesn't exist)
+  ```
+  - There are many methods you can use to modify arrays:
+  ```js
+  const myArray = [1, 2, 3, 4, 5]
+  
+  // returns the number of items in the array, starting from 1 not 0
+  console.log(myArray.length) // 5
+  
+  // adds the element(s) to the end of the array and returns the new length of the array
+  console.log(myArray.push(6)) // 6 
+  console.log(myArray) // [1, 2, 3, 4, 5, 6]
+  
+  // removes the last element of the array and returns it
+  console.log(myArray.pop()) // 6
+  console.log(myArray) // [1, 2, 3, 4, 5]
+  
+  // adds element(s) to the start of the array and returns the new length of the array
+  console.log(myArray.unshift(0)) // 6
+  console.log(myArray) // [0, 1, 2, 3, 4, 5]
+  
+  // removes the first element of the array and returns it
+  console.log(myArray.shift()) // 0
+  console.log(myArray) // [1, 2, 3, 4, 5]
+  ```
+- [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+  - Objects are also a type of collection, written using curly braces. They contain data stored as key-value pairs
+  ```js
+  let person = {
+    age: 20,
+    name: "phil",
+  };
+  ```
+  - Objects and Arrays are commonly used together to chain up complex amounts of data together
+  ```js
+  const james = {
+    name: "James",
+    age: 20,
+    likes: ["cars", "dogs"]
+  }
+  
+  const collwyn = {
+    name: "Collwyn",
+    age: 20,
+    likes: ["japan", "vr"]
+  }
+  
+  const people = [james, collwyn]
+  console.log(people) // copy this code into your browser's console and see what it returns
+  ```
+
 - Outputting to the console
   ```js
   console.log(1 + 1) // 2
@@ -741,53 +806,6 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // }
   
   console.log(canIDrink) // Yes
-  ```
-- [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-  - Arrays are a type of collection, essentially a list of elements
-  - Arrays can contain many different types
-  - Each item in the array is called an *element*
-  - Arrays are written using square brackets with commas to seperate the elements 
-  ```js
-  const myArray = ["Apple", 5, true, "Orange"]
-  ```
-  - Each element has an index (position in the array) starting at 0. The first element is index 0, the second is index 1 etc. Here is how you would index each element of the array:
-  ```js
-  console.log(myArray[0]) // Apple
-  console.log(myArray[2]) // true
-  console.log(myArray[4]) // undefined (index 4, the 5th element doesn't exist)
-  ```
-  - There are many methods you can use to modify arrays:
-  ```js
-  const myArray = [1, 2, 3, 4, 5]
-  
-  // returns the number of items in the array, starting from 1 not 0
-  console.log(myArray.length) // 5
-  
-  // adds the element(s) to the end of the array and returns the new length of the array
-  console.log(myArray.push(6)) // 6 
-  console.log(myArray) // [1, 2, 3, 4, 5, 6]
-  
-  // removes the last element of the array and returns it
-  console.log(myArray.pop()) // 6
-  console.log(myArray) // [1, 2, 3, 4, 5]
-  
-  // adds element(s) to the start of the array and returns the new length of the array
-  console.log(myArray.unshift(0)) // 6
-  console.log(myArray) // [0, 1, 2, 3, 4, 5]
-  
-  // removes the first element of the array and returns it
-  console.log(myArray.shift()) // 0
-  console.log(myArray) // [1, 2, 3, 4, 5]
-  ```
-- [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-  - Objects are also a type of collection, but contain values stored as key-value pairs
-  - Objects are written using curly braces
-  ```js
-  let person = {
-    age: 20,
-    name: "phil",
-    likes: ["dogs", "cats"],
-  };
   ```
   - .forEach() (depending on how confident people are)
 - JS methods - look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
