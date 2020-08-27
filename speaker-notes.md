@@ -891,7 +891,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   console.log(canDrink) // Yes
   ```
-### [Array Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Common_operations)
+### [Array functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Common_operations)
   - These are functions that loop over each element of an array, and give you the current element in a variable to perform actions on (depending on the function)
   #### Looping through an array
   - The .forEach function takes an array and runs a piece of code once on each element
@@ -955,7 +955,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   numbersUnder100 = numbers.filter(number => number < 100)
   ```
   
-## Challenge 5 - Javascript Basics
+## Challenge 5 - Javascript basics
 - Print out your name with a message (like 'Hello there [your name]')
 - Create 2 variables, `a` & `b`, and assign different numbers to them. Then do some multiplication, division, addition, and subtraction, with them.
 - Create a new variable `x`, and assign it the number 20 like so: `const x = "20"`. Add that to one of your previous variables. What do you notice? Why do you think that is?
@@ -1020,7 +1020,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(total(10, 15)) // 25
   ```
   
-### Including JS in a HTML page
+### Including JavaScript in a HTML page
   - JavaScript can be added to a HTML page by using a `<script>` tag
   ```html
   <body>
