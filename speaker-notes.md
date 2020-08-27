@@ -1082,7 +1082,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```js
   function callAPI(query) {
     // we can use the fetch function to make a HTTP GET request to the URL we give it
-    const response = fetch(`http://api.tvmaze.com/search/shows?q=${query}`); // make API call
+    const response = fetch(`http://api.tvmaze.com/search/shows?q=${query}`) // make API call
     
     // we need to do this to get the data
     const data = response.json() // TypeError: response.json is not a function
@@ -1096,10 +1096,11 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```js
   // we have to tell the function to be asyncronous by using the async keyword
   async function callAPI(query) {
-    const response = await fetch(`http://api.tvmaze.com/search/shows?q=${query}`); // wait for a response to be received from the website
+    // wait for a response to be received from the website
+    const response = await fetch(`http://api.tvmaze.com/search/shows?q=${query}`)
     
-    // we need to do this to get the data
-    const data = await response.json(); // wait for the JSON data from the response to be received
+    // wait for the JSON data from the response to be received
+    const data = await response.json()
     
     // this line will only run once the data has all been received properly
     return data
