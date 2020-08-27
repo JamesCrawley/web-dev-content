@@ -1106,6 +1106,16 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     return data
   }
   ```
+  
+  - As callAPI is now an asynchronous function, we'd need to use await when we call it
+  ```js
+  async someOtherAsyncFunction() {
+    // ...
+    // await can ONLY be used inside an async function!
+    await callAPI("Breaking Bad")
+    // ...
+  }
+  ```
 
 ## Challenge 6 - Including JavaScript on the page, and JavaScript API calls with async/await
 
