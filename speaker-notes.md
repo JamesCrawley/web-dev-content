@@ -554,7 +554,7 @@ Add the `justify-content` property to the `my-flex` selector in `flex.css`, and 
 JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of the programming language, but there's lots more to be done independently
 
 ### Expressions
-  - Expressions are one of the fundamental principles behind JavaScript logic, essentially it is a bunch of *values* and *operators*, that result in a return value, here is a few examples:
+  - Expressions are one of the fundamental principles behind JavaScript logic, essentially it is a bunch of *values* and *operators*, that result in a return value, here are a few examples:
   ```js
   const myName = "James" // this is a variable callde myName with the value of "James"
   
@@ -562,22 +562,22 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   "My name is " + myName
   
   // this is also an expression, but returns the value 19
-  9 + 19
+  9 + 10
   ```
   
 ### Variables
   - Variables can be looked at as pockets where you can store data, identified by their unique names
   
-  - The data that variables store can be in many different data types (see section )below, such as *strings*, *numbers* and *booleans* to name a few
+  - The data that variables store can be in many different data types (see section below), such as *strings*, *numbers* and *booleans* to name a few
   
-  - Unlike other programming languages, in JavaScript you don't need to tell the code what data types you want your variables to be. This led to the creation of the [TypeScript](https://www.typescriptlang.org/) language created by Microsoft
+  - Unlike other programming languages, in JavaScript you don't need to tell the code what data types you want your variables to be. This led to the creation of the [TypeScript](https://www.typescriptlang.org/) language by Microsoft
   
   - To create a variable you need to know:
-    - Whether to use *const* or *let* (does the variable need to change at any point or not)
+    - Whether to use *let* or *const* (*let* variables can change, *const* variables can't)
     
-    - The name of the variable
+    - The name of the variable (can only contain alphanumeric characters, no symbols)
     
-    - (Optional) A value to give to the variable
+    - A value to give to the variable (optional for *let*, required for *const*)
     
   - How to create a variable:
     - const (value of variable must be set at variable creation and cant be changed after)
@@ -594,7 +594,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(myVariable) // Hello!
 
     myVariable = "Hello world!"
-    console.log(myVariable) // Hello World!
+    console.log(myVariable) // Hello world!
     ```
     
     - var (we don't use this one since let was introduced)
@@ -615,8 +615,8 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     
     - Boolean: A true or false value
     ```js
-    const canIDrive = true
-    console.log(canIDrive ? "Yes!" : "No!") // Yes!
+    const canDrive = true
+    console.log(canDrive ? "Yes!" : "No!") // Yes!
     // ^ we'll explain what this means later ^
     ```
     
@@ -636,7 +636,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```js
   console.log(myArray[0]) // Apple
   console.log(myArray[2]) // true
-  console.log(myArray[4]) // undefined (index 4, the 5th element doesn't exist)
+  console.log(myArray[4]) // undefined (index 4 (the 5th element) doesn't exist)
   ```
   
   - There are many methods you can use to modify arrays:
@@ -700,11 +700,21 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
 
 ### Outputting to the console
+  - This is used to log the values of variables and expressions to the developer console
+  - It is very useful for debugging and testing code 
   ```js
   console.log(1 + 1) // 2
   console.log("Hello world!") // Hello World!
   console.log(50 + 50 === 100) // true
   console.log([1, 2, 4, 5].includes(3)) // false
+  
+  // you can also use
+  console.warn()
+  
+  // and
+  console.error()
+  
+  // to display yellow and red messages to the console
   ```
   
 ### [Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Comments)
@@ -866,17 +876,17 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   - Ternary expressions are written with `?` and `:` like this: `const returnValue = [expression] ? [value if true] : [value if false]`
   ```js
   const age = 20
-  const canIDrink = age >= 18 ? "Yes" : "No"
+  const canDrink = age >= 18 ? "Yes" : "No"
   
   // this is literally 'if age is 18 or over, return "Yes", else return "No"'
   // equivalent to:
   // if (age >= 18) {
-  //   canIDrink = "Yes"
+  //   canDrink = "Yes"
   // } else {
-  //   canIDrink = "No"
+  //   canDrink = "No"
   // }
   
-  console.log(canIDrink) // Yes
+  console.log(canDrink) // Yes
   ```
   
   - .forEach() (depending on how confident people are)
