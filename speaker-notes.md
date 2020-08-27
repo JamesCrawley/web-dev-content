@@ -22,6 +22,7 @@
   - [Conditional Statements](#conditional-statements)
   - [Array Functions](#array-functions)
 - [Challenge 5 - JavaScript Basics](#challenge-5---javascript-basics)
+- [Going further with JavaScript](#going-further-with-javascript)
   
 
 ## Background on DSA & RPT
