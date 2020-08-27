@@ -1,11 +1,11 @@
 # Course Content - Speaker Notes
 
 ## Contents
-[HTML](#introduction-to-html)
-[CSS](## Introduction to CSS)
-[CSS Grid](#css-grid)
-[CSS Flex](#css-flex)
-[JavaScript](#javascript)
+- [Introduction to HTML](#introduction-to-html)
+- [Introduction to CSS](#introduction-to-css)
+- [Introduction to CSS Grid](#introduction-to-css-grid)
+- [Introduction to CSS Flex](#introduction-to-css-flex)
+- [Introduction to JavaScript](#introduction-to-javascript)
 
 ## Background on DSA & RPT
 
