@@ -881,6 +881,41 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
 ### [Array Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Common_operations)
   - These are functions that you can perform on arrays, there are many of them, and the documentation in the link above is really helpful
+  - Looping through an array using *.forEach*
+  ```js
+  const fruits = ["apples", "oranges", "bananas", "grapes"]
+  
+  // fruit represents the current element in the fruits array that is being iterated over
+  fruits.forEach(fruit => {
+    // this code is run once for each element in the fruits array
+    console.log("I like: " + fruit)
+  })
+  
+  // this code will log:
+  
+  // I like: apples
+  // I like: oranges
+  // I like: bananas
+  // I like: grapes
+  ```
+  
+  - Creating a new array from an existing array using *.map*
+  - Doesn't change the original array
+  ```js
+  const names = ["James", "Collwyn", "Will"]
+  let shortNames
+  
+  // the .map function returns a new array and assigns it to the shortNames variable
+  shortNames = names.map(name => {
+    // if the name is 4 characters or less, add it to the new array
+    if(name.length >= 4) {
+      return name
+    }
+  })
+  
+  // this can also be written in super shorthand like this
+  shortNames = names.map(name => name.length >= 4)
+  ```
   
 ## Challenge 5 - Javascript Basics
 - Print out your name with a message (like 'Hello there [your name]')
