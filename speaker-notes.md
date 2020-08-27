@@ -223,9 +223,9 @@ CSS (Cascasding Style Sheets) is a styling language that is used to style HTML p
 
 The first thing you need to do is create a CSS file, call it whatever you want as long as it has the .css file extension, a common name is `styles.css`.
 
-The next thing to do is to link it to your HTML document, the code below goes inside the `<head> </head>` tags in your HTML document, all it does is point to your .css file. Just make sure that the name in `href=""` matches the name of the CSS file you have created!
+The next thing to do is to link it to your HTML document, the code below goes inside the `<head></head>` tags in your HTML document, all it does is point to your .css file. Just make sure that the name in `href=""` matches the name of the CSS file you have created!
 ```html
-<link rel="“stylesheet”" href="styles.css" />
+<link rel="stylesheet" href="styles.css" />
 ```
 
 ### CSS Selectors
