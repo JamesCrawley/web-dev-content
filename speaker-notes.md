@@ -734,109 +734,109 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
   
 ### [Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
-  #### [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
-    - These are used to change the value of a variable
-    ```js
-    let myNumber = 0;
-    
-    // assignment (=)
-    myNumber = 5 // set myNumber to 5
-    console.log(myNumber) // 5
-    
-    // addition assignment (+=)
-    myNumber += 7 // add 7 to myNumber
-    console.log(myNumber) // 12
-    
-    // subtraction assignment (-=)
-    myNumber -= 2 // minus 2 from myNumber
-    console.log(myNumber) // 10
-    
-    // multiplication assignment (*=)
-    myNumber *= 5 // multiply myNumber by 5
-    console.log(myNumber) // 50
-    
-    // division assignment (/=)
-    myNumber /= 2 // divide myNumber by 2
-    console.log(myNumber) // 
-    ```
-    
-  #### [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)
-    ```js
-    // addition (+)
-    console.log(10 + 4 + 6) // 20
-    
-    // subtraction (-)
-    console.log(6 - 4) // 2
-    
-    // multiplication (*)
-    console.log(5 * 5) // 25
-    
-    // division (/)
-    console.log(100 / 25) // 4
-    
-    // remainder (%)
-    // this basically does 10 divided by 3, and then returns the remainder
-    console.log(10 % 3) // 1
-    
-    // exponents/power (**)
-    // 2 to the power of 3
-    console.log(2 ** 3) // 8
-    
-    // these can be chained up using brackets to change the [order of precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
-    // this evaluates as (5) * 3, then to 15
-    console.log((50 / 10) * 3) // 15
-    ```
-    
-  #### [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
-    - These are used to compare the values of two pieces of data
-    ```js
-    // equality operator, compare the values only, in JavaScript the number 20 and the string "20" are identical values
-    console.log(10 == "10") // true
-    
-    // inequality operator (the opposite of equality)
-    console.log(10 != "10") // false
-    
-    // identity operator, compare the values and the types, their values are identical but their types aren't, as one is a number and the other is a string
-    // use this operator 99% of the time instead of the equality operator
-    console.log(10 === "10") // false
-    
-    // non-identity operator (the opposite of identy)
-    // use this operator 99% of the time instead of the inequality operator
-    console.log(10 !== "10") // true
-    ```
-    
-  #### [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators)
-    ```js
-    // less than operator (<)
-    console.log(5 < 8) // true
-    console.log(10 < 6) // false
-    
-    // less than or equal to operator (<=)
-    console.log(7 <= 7) // true
-    console.log(7 <= 9) // false
-    
-    // greater than operator (>)
-    console.log(2 > -6) // true
-    console.log(10 > 20) // false
-    
-    // greater than or equal to operator (>=)
-    console.log(9 >= 2) // true
-    console.log(4 >= -7) // false
-    ```
-    
-  #### [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
-    ```js
-    const myName = "James"
-    const myAge = 20
-    
-    // AND operator (&&)
-    // both expressions have to be true for this statement to return true
-    console.log(myName === "James" && myAge > 20) // false
-    
-    // OR operator (||)
-    // one or more of these expressions has to be true for this statement to return true
-    console.log(myName === "James" || myAge > 20) // true
-    ```
+#### [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
+  - These are used to change the value of a variable
+  ```js
+  let myNumber = 0;
+
+  // assignment (=)
+  myNumber = 5 // set myNumber to 5
+  console.log(myNumber) // 5
+
+  // addition assignment (+=)
+  myNumber += 7 // add 7 to myNumber
+  console.log(myNumber) // 12
+
+  // subtraction assignment (-=)
+  myNumber -= 2 // minus 2 from myNumber
+  console.log(myNumber) // 10
+
+  // multiplication assignment (*=)
+  myNumber *= 5 // multiply myNumber by 5
+  console.log(myNumber) // 50
+
+  // division assignment (/=)
+  myNumber /= 2 // divide myNumber by 2
+  console.log(myNumber) // 
+  ```
+
+#### [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)
+  ```js
+  // addition (+)
+  console.log(10 + 4 + 6) // 20
+
+  // subtraction (-)
+  console.log(6 - 4) // 2
+
+  // multiplication (*)
+  console.log(5 * 5) // 25
+
+  // division (/)
+  console.log(100 / 25) // 4
+
+  // remainder (%)
+  // this basically does 10 divided by 3, and then returns the remainder
+  console.log(10 % 3) // 1
+
+  // exponents/power (**)
+  // 2 to the power of 3
+  console.log(2 ** 3) // 8
+
+  // these can be chained up using brackets to change the [order of precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+  // this evaluates as (5) * 3, then to 15
+  console.log((50 / 10) * 3) // 15
+  ```
+
+#### [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
+  - These are used to compare the values of two pieces of data
+  ```js
+  // equality operator, compare the values only, in JavaScript the number 20 and the string "20" are identical values
+  console.log(10 == "10") // true
+
+  // inequality operator (the opposite of equality)
+  console.log(10 != "10") // false
+
+  // identity operator, compare the values and the types, their values are identical but their types aren't, as one is a number and the other is a string
+  // use this operator 99% of the time instead of the equality operator
+  console.log(10 === "10") // false
+
+  // non-identity operator (the opposite of identy)
+  // use this operator 99% of the time instead of the inequality operator
+  console.log(10 !== "10") // true
+  ```
+
+#### [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators)
+  ```js
+  // less than operator (<)
+  console.log(5 < 8) // true
+  console.log(10 < 6) // false
+
+  // less than or equal to operator (<=)
+  console.log(7 <= 7) // true
+  console.log(7 <= 9) // false
+
+  // greater than operator (>)
+  console.log(2 > -6) // true
+  console.log(10 > 20) // false
+
+  // greater than or equal to operator (>=)
+  console.log(9 >= 2) // true
+  console.log(4 >= -7) // false
+  ```
+
+#### [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
+  ```js
+  const myName = "James"
+  const myAge = 20
+
+  // AND operator (&&)
+  // both expressions have to be true for this statement to return true
+  console.log(myName === "James" && myAge > 20) // false
+
+  // OR operator (||)
+  // one or more of these expressions has to be true for this statement to return true
+  console.log(myName === "James" || myAge > 20) // true
+  ```
     
 ### Conditional statements
   - These are used to run a block of code depending on the truthiness of an expression
