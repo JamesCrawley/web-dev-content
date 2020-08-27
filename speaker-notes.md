@@ -6,6 +6,7 @@
 - [Introduction to CSS Grid](#introduction-to-css-grid)
 - [Introduction to CSS Flex](#introduction-to-css-flex)
 - [Introduction to JavaScript](#introduction-to-javascript)
+  - [Expressions](#expressions)
 
 ## Background on DSA & RPT
 
@@ -536,7 +537,7 @@ Add the `justify-content` property to the `my-flex` selector in `flex.css`, and 
 ## Introduction to JavaScript
 JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of the programming language, but there's lots more to be done independently
 
-- Expressions
+### Expressions
   - Expressions are one of the fundamental principles behind JavaScript logic, essentially it is a bunch of *values* and *operators*, that result in a return value, here is a few examples:
   ```js
   const myName = "James" // this is a variable callde myName with the value of "James"
