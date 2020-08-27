@@ -881,7 +881,8 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   - .forEach() (depending on how confident people are)
   
-### JS methods - look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
+### JS methods 
+  - Look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
 
 ## Challenge 5 - Javascript Basics
 
