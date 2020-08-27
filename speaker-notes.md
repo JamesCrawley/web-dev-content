@@ -1009,29 +1009,68 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(total(10, 15)) // 25
   ```
   
-- Including JS on the page with `<script>` tags
-- Explain DOM & interacting with it
-
-  - 4 lines:
-
-  ```js
-  const el = document.querySelector("#el"); // copies element into JavaScript
-  const newEl = document.createElement("li"); // create new element as variable
-  newEl.innerHTML = "content"; // filling the element
-  el.appendChild(newEl); // attaches the new element back into the DOM
+### Including JS in a HTML page
+  - JavaScript can be added to a HTML page by using a `<script>` tag
+  ```html
+  <body>
+    <script>
+    // the JavaScript code in this script tag will run as soon as the HTML page is opened
+    console.log("Hello!")
+    </script>
+  </body>
   ```
-
-  - Adding event listener:
-
-  ```js
-  const el = document.querySelector("#button"); // copies element into JavaScript
-  el.addEventListener("submit", (e) => {
-    // declare submit event
-    e.preventDefault(); // prevent sending HTTP request to submit
-    console.log("clicked"); // do stuff
-  });
+  
+  - This is also how you reference external `.js` JavaScript files to use on a HTML page
+  ```html
+  <body>
+    <!-- this JavaScript file will run as soon as the HTML page is opened -->
+    <script src="script.js"/>
+  </body>
   ```
-
+  
+### Interacting with the DOM
+  - The Document Object Modal (DOM) is an interface that JavaScript has for interacting with HTML elements. You can use JavaScript to dynamically create, edit, remove HTML elements and much more.
+  - HTML elements are targeted using the same selectors that you use in CSS (`.` for classes, `#` for IDs, tag names for HTML elements)
+  
+  #### Finding a HTML element
+  - Using `document.querySelector` to find a single HTML element, and `document.querySelectorAll` to find multiple HTML elements
+  ```js
+  const myForm = document.querySelector(".my-form") // find the first HTML element with the class of .my-form
+  const allDivs = document.querySelectorAll("#el") // find all HTML <div> elements
+  ```
+  
+  #### Creating a new HTML element
+  ```js
+  const newListItem = document.createElement("li") // create the new HTML <li> list item element as a JavaScript variable
+  newListItem.innerHTML = "This is a new list item!" // put some text in the new element
+  ```
+  
+  #### Adding a HTML element to the page
+  ```js
+  const myList = document.querySelector(".my-list") // find my list
+  myList.appendChild(newListItem); // attaches the new list item into the list
+  ```
+  
+  #### Creating an event listener
+  ```js
+  // find the submit button by its class
+  const submitButton = document.querySelector(".submit-button")
+  
+  // attaching the onButtonClick function to the click event of the button
+  submitButton.addEventListener("click", onButtonClick)
+  
+  // function to run when the button is clicked
+  function onButtonClick(e) {
+    // the parameter e is automatically passed through to this function
+    // it stores information about the click event
+    
+    // this stops the browser from performing its default action
+    // if this button was to submit a form, the default action is to make a HTTP request and reload the page
+    e.preventDefault()
+    console.log("You have clicked my button!")
+  }
+  ```
+  
   - Async/await (explain async)
 
   ```js
