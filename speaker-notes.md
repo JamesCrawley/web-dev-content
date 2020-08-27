@@ -549,7 +549,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   9 + 19
   ```
   
-- Variables
+### Variables
   - Variables can be looked at as pockets where you can store data, identified by their unique names
   
   - The data that variables store can be in many different data types (see section )below, such as *strings*, *numbers* and *booleans* to name a few
@@ -583,7 +583,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     
     - var (we don't use this one since let was introduced)
     
-- Data types
+### Data types
   - Data types define the format that a piece of data is in. It can be from one of the folowing (as well as many more)
     - String: Any form of text
     ```js
@@ -604,7 +604,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // ^ we'll explain what this means later ^
     ```
     
-- [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+### [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
   - Arrays are another data type, they are essentially a list of elements
   
   - Arrays can contain many different types
@@ -647,7 +647,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(myArray) // [1, 2, 3, 4, 5]
   ```
   
-- [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+### [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
   - Objects are also another data type, written using curly braces. They contain data (known as *properties*) stored as key-value pairs
   ```js
   let person = {
@@ -683,7 +683,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(people) // copy/paste this section of code into your browser's console and see what it returns
   ```
 
-- Outputting to the console
+### Outputting to the console
   ```js
   console.log(1 + 1) // 2
   console.log("Hello world!") // Hello World!
@@ -691,7 +691,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log([1, 2, 4, 5].includes(3)) // false
   ```
   
-- [Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Comments)
+### [Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Comments)
   - Comments are used to annotate and describe your code
   
   - Single line comments are written using double forward-slashes
@@ -717,8 +717,8 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(number) // 5
   ```
   
-- [Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
-  - [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
+### [Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+  #### [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
     - These are used to change the value of a variable
     ```js
     let myNumber = 0;
@@ -744,7 +744,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(myNumber) // 
     ```
     
-  - [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)
+  #### [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)
     ```js
     // addition (+)
     console.log(10 + 4 + 6) // 20
@@ -771,7 +771,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log((50 / 10) * 3) // 15
     ```
     
-  - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
+  #### [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
     - These are used to compare the values of two pieces of data
     ```js
     // equality operator, compare the values only, in JavaScript the number 20 and the string "20" are identical values
@@ -789,7 +789,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(10 !== "10") // true
     ```
     
-  - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators)
+  #### [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators)
     ```js
     // less than operator (<)
     console.log(5 < 8) // true
@@ -808,7 +808,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(4 >= -7) // false
     ```
     
-  - [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
+  #### [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
     ```js
     const myName = "James"
     const myAge = 20
@@ -822,7 +822,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(myName === "James" || myAge > 20) // true
     ```
     
-- Conditional statements
+### Conditional statements
   - These are used to run a block of code depending on the truthiness of an expression
   ```js
   if (expression) {
@@ -865,7 +865,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   - .forEach() (depending on how confident people are)
   
-- JS methods - look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
+### JS methods - look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
 
 ## Challenge 5 - Javascript Basics
 
