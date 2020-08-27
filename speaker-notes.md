@@ -1,5 +1,12 @@
 # Course Content - Speaker Notes
 
+## Contents
+[HTML](#introduction-to-html)
+[CSS](## Introduction to CSS)
+[CSS Grid](#css-grid)
+[CSS Flex](#css-flex)
+[JavaScript](#javascript)
+
 ## Background on DSA & RPT
 
 - Use existing slides, explain plan for 2 days.
@@ -174,7 +181,7 @@ In the example above, the `<div>` has two **children**, `<h1>` and `<p>`. Theref
 
   - Charset should be specified as `UTF-8`
   - The page should have a title
-
+  
 ## Introduction to CSS
 
 CSS (Cascasding Style Sheets) is a styling language that is used to style HTML pages to make them much more user friendly and appealing. You will find CSS on pretty much every website that exists as without it they would look **extremely** basic. CSS is used to changethings such as colours, fonts, sizes as well as positioning of elements using margin, padding as well as more complex properties such as grids and flexboxes. CSS is a written in a **very** simple format, making it easy to learn alongside HTML even if you're a beginner!
