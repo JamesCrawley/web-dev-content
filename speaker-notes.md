@@ -28,7 +28,7 @@
   - [Interacting with the DOM](#interacting-with-the-dom)
     - [Finding a HTML element](#finding-a-html-element)
     - [Creating a new HTML element](#creating-a-new-html-element)
-    - [Adding a HTML element to the page](#adding-a-html-elament-to-the-page)
+    - [Adding a HTML element to the page](#adding-a-html-element-to-the-page)
     - [Creating an event listener](#creating-an-event-listener)
   - [Asynchronous JavaScript](#asynchronous-javascript)
 - [Challenge 6 - Including JavaScript on the page, and JavaScript API calls with async/await](#challenge-6---including-javascript-on-the-page-and-javascript-api-calls-with-asyncawait)
