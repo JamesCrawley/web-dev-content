@@ -466,7 +466,7 @@ border: 1px solid black;
 
 - If this is just too easy, then take a look at [grid-template-areas](https://tinyurl.com/GridTemplateAreas), and try and make something that looks like [this](https://imgur.com/qzbM3t5.png)!
 
-## Introduction to Flex
+## Introduction to CSS Flex
 
 FlexBox, also known as Flex, is similar to CSS Grid in that it allows you to structure your webpage, but it does so a slightly different way.
 
