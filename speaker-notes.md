@@ -23,7 +23,9 @@
   - [Array Functions](#array-functions)
 - [Challenge 5 - JavaScript Basics](#challenge-5---javascript-basics)
 - [Going further with JavaScript](#going-further-with-javascript)
-  
+  - [Functions](#functions)
+  - [Including JS in a HTML Page](#including-js-in-a-html-page)
+  - [Interacting with the DOM](#interacting-with-the-dom)
 
 ## Background on DSA & RPT
 
