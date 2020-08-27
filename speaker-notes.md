@@ -908,9 +908,9 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   const twoTimesTables = [2, 4, 6, 8, 10]
   let fourTimesTables
   
-  fourTimesTables = twoTimesTables.map(name => {
+  fourTimesTables = twoTimesTables.map(number => {
     // multiply each element of the array by two
-    return name.length * 2
+    return number * 2
   })
   
   console.log(fourTimesTables) // [4, 8, 12, 16, 20]
