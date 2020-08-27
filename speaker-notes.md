@@ -918,7 +918,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   - This can also be written in shorthand 
   ```js
-  fourTimesTables = twoTimesTables.map(name => name.length * 2)
+  fourTimesTables = twoTimesTables.map(number => number * 2)
   ```
   
   #### Filtering the values of an array
