@@ -17,7 +17,7 @@
     - [Assignment Operators](#assignment-operators)
     - [Arithmetic Operators](#arithmetic-operators)
     - [Comparison Operators](#comparison-operators)
-    - [Relation Operators](#relational-operators)
+    - [Relational Operators](#relational-operators)
     - [Logic Operators](#logic-operators)
   - [Conditional Statements](#conditional-statements)
   - [Array Functions](#array-functions)
@@ -26,7 +26,12 @@
   - [Functions](#functions)
   - [Including JS in a HTML Page](#including-js-in-a-html-page)
   - [Interacting with the DOM](#interacting-with-the-dom)
+    - [Finding a HTML element](#finding-a-html-element)
+    - [Creating a new HTML element](#creating-a-new-html-element)
+    - [Adding a HTML element to the page](#adding-a-html-elament-to-the-page)
+    - [Creating an event listener](#creating-an-event-listener)
   - [Asynchronous JavaScript](#asynchronous-javascript)
+- [Challenge 6 - Including JavaScript on the page, and JavaScript API calls with async/await](#challenge-6---including-javascript-on-the-page-and-javascript-api-calls-with-asyncawait)
 
 ## Background on DSA & RPT
 
