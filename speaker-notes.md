@@ -880,15 +880,16 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(canDrink) // Yes
   ```
 ### [Array Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Common_operations)
-  - These are functions that you can perform on arrays, there are many of them, and the documentation in the link above is really helpful
-  #### Looping through an array using *.forEach*
+  - These are functions that loop over each element of an array, and give you the current element in a variable to perform actions on (depending on the function)
+  #### Looping through an array
+  - The .forEach function takes an array and runs a piece of code once one each element
   - Changes the original array
   ```js
   const fruits = ["apples", "oranges", "bananas", "grapes"]
   
   fruits.forEach(fruit => {
-    // fruit represents the current element in the fruits array that is being iterated over
     // this code is run once for each element in the fruits array
+    // fruit represents the current element in the fruits array
     console.log("I like: " + fruit)
   })
   
@@ -900,22 +901,44 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // I like: grapes
   ```
   
-  #### Creating a new array from an existing array using *.map*
-  - Doesn't change the original array
+  #### Creating a new array from an existing array
+  - The .map function takes an array and returns a new array with modified elements
+  - Doesn't change the original array, creates a new one
   ```js
-  const names = ["James", "Collwyn", "Will"]
-  let shortNames
+  const twoTimesTables = [2, 4, 6, 8, 10]
+  let fourTimesTables
   
-  // the .map function returns a new array and assigns it to the shortNames variable
-  shortNames = names.map(name => {
-    // if the name is 4 characters or less, add it to the new array
-    if(name.length >= 4) {
-      return name
-    }
+  fourTimesTables = twoTimesTables.map(name => {
+    // multiply each element of the array by two
+    return name.length * 2
   })
   
-  // this can also be written in super shorthand like this
-  shortNames = names.map(name => name.length >= 4)
+  console.log(fourTimesTables) // [4, 8, 12, 16, 20]
+  ```
+  
+  - This can also be written in shorthand 
+  ```js
+  fourTimesTables = twoTimesTables.map(name => name.length * 2)
+  ```
+  
+  #### Filtering the values of an array
+  - The .filter function returns a new array with the filtered elements
+  - Creates a new array containing values that pass a condition
+  
+  ```js
+  const numbers = [12, 154, 288, 139, 23]
+  
+  let numbersUnder100
+  
+  numbersUnder100 = numbers.filter(number => {
+    // the condition here is that 'the number is less than 100'
+    return number < 100
+  })
+  ```
+  
+  - This can also be written in shorthand
+  ```js
+  numbersUnder100 = numbers.filter(number => number < 100)
   ```
   
 ## Challenge 5 - Javascript Basics
