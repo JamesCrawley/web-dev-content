@@ -1074,7 +1074,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   }
   ```
   
-  #### Asynchronous JavaScript
+### Asynchronous JavaScript
   - Not everything in your code can happen one thing after the other, some things will have delays which can slow down your webpage so you'd want them to run concurrently
 
   ```js
