@@ -881,7 +881,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
 ### [Array Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Common_operations)
   - These are functions that you can perform on arrays, there are many of them, and the documentation in the link above is really helpful
-  - Looping through an array using *.forEach*
+  #### Looping through an array using *.forEach*
   ```js
   const fruits = ["apples", "oranges", "bananas", "grapes"]
   
@@ -899,7 +899,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // I like: grapes
   ```
   
-  - Creating a new array from an existing array using *.map*
+  #### Creating a new array from an existing array using *.map*
   - Doesn't change the original array
   ```js
   const names = ["James", "Collwyn", "Will"]
