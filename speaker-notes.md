@@ -545,7 +545,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     const canIDrive = true
     console.log(canIDrive ? "Yes!" : "No :(") // we'll explain what this means later
     ```
-- Output to console
+- Outputting to console
   ```js
   console.log(1 + 1) // 2
   console.log("Hello world!") // Hello World!
@@ -569,12 +569,12 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     - The name of the variable
     - (Optional) A value to give to the variable
   - How to create a variable:
-  ```js
-  // [const or let] [variable name] = [variable value]
-  const var1 = 100
-  let var2;
-  let var3 = var1
-  ```
+    ```js
+    // [const or let] [variable name] = [variable value]
+    const var1 = 100
+    let var2;
+    let var3 = var1
+    ```
     - const (value of variable must be set at variable creation and cant be changed after)
     ```js
     const myConstant = 5 // this can't be changed
@@ -590,39 +590,83 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     myVariable = "Hello world!"
     console.log(myVariable) // Hello World!
     ```
-    - var (don't use this one anymore)
-- Assignment operators (=, +=, -=, *=, /=)
-  ```js
-  let myNumber = 0;
-  
-  myNumber = 5 // set myNumber to 5
-  console.log(myNumber) // 5
-  
-  myNumber += 7 // add 7 to myNumber
-  console.log(myNumber) // 12
-  
-  myNumber -= 2 // minus 2 from myNumber
-  console.log(myNumber) // 10
-  
-  myNumber *= 5 // multiply myNumber by 5
-  console.log(myNumber) // 50
-  
-  myNumber /= 2 // divide myNumber by 2
-  console.log(myNumber) // 
-  ```
-- [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) (+, -, *, /)
-  ```js
-  console.log(10 + 4 + 6) // 20
-  console.log(6 - 4) // 2
-  console.log((50 / 10) * 3) // 15
-  ```
-- [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
-  ```js
-  10 == "10" // true
-  10 === "10" // false
-  ```
-- [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators) (<, >, =<, >=)
-- Conditional operators
+    - var (we don't use this one since let was introduced)
+- Operators
+  - [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
+    - These are used to change the value of a variable 
+    ```js
+    let myNumber = 0;
+
+    myNumber = 5 // set myNumber to 5
+    console.log(myNumber) // 5
+
+    myNumber += 7 // add 7 to myNumber
+    console.log(myNumber) // 12
+
+    myNumber -= 2 // minus 2 from myNumber
+    console.log(myNumber) // 10
+
+    myNumber *= 5 // multiply myNumber by 5
+    console.log(myNumber) // 50
+
+    myNumber /= 2 // divide myNumber by 2
+    console.log(myNumber) // 
+    ```
+  - [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)
+    ```js
+    // addition (+)
+    console.log(10 + 4 + 6) // 20
+    
+    // subtraction (-)
+    console.log(6 - 4) // 2
+    
+    // multiplication (*)
+    console.log(5 * 5) // 25
+    
+    // division (/)
+    console.log(100 / 25) // 4
+    
+    // remainder (%)
+    // this basically does 10 divided by 3, and then returns the remainder
+    console.log(10 % 3) // 1
+    
+    // exponents/power (**)
+    // 2 to the power of 3
+    console.log(2 ** 3) // 8
+    
+    // these can be chained up using brackets to change the [order of precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+    // this evaluates as (5) * 3, then to 15
+    console.log((50 / 10) * 3) // 15
+    ```
+  - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
+    ```js
+    // equality operator, compare the values only, in JavaScript the number 20 and the string "20" are identical values
+    console.log(10 == "10") // true
+    
+    // inequality operator (the opposite of equality)
+    console.log(10 != "10") // false
+    
+    // identity operator, compare the values and the types, their values are identical but their types aren't, as one is a number and the other is a string
+    // use this operator 99% of the time instead of the equality operator
+    console.log(10 === "10") // false
+    
+    // non-identity operator (the opposite of identy)
+    // use this operator 99% of the time instead of the inequality operator
+    console.log(10 !== "10") // true
+    ```
+  - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators) (<, >, =<, >=)
+  - [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
+    ```js
+    const myName = "James"
+    const myAge = 20
+    
+    // AND operator, both expressions have to be true for this statement to return true
+    console.log(myName === "James" && myAge > 20) // false
+    
+    // OR operator, one or more expression has to be true for this statement to return true
+    console.log(myName === "James" || myAge > 20) // true
+    ```
+- Conditional statements
   - These are used to run a block of code depending on the truthiness of an expression
   ```js
   if (expression) {
@@ -657,13 +701,15 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   console.log(canIDrink) // Yes
   ```
-- Arrays and objects
+- [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
   - Arrays are a type of collection, essentially a list of elements
   - Arrays can contain many different types
+  - Each item in the array is called an *element*
+  - Arrays are written using square brackets with commas to seperate the elements 
   ```js
   const myArray = ["Apple", 5, true, "Orange"]
   ```
-  - Each item in the array is called an *element*, each element has an index (position in the array) starting at 0. Here is how you would index each element of the array:
+  - Each element has an index (position in the array) starting at 0. The first element is index 0, the second is index 1 etc. Here is how you would index each element of the array:
   ```js
   console.log(myArray[0]) // Apple
   console.log(myArray[2]) // true
@@ -691,13 +737,10 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // removes the first element of the array and returns it
   console.log(myArray.shift()) // 0
   console.log(myArray) // [1, 2, 3, 4, 5]
-  
-  
-  
-  
-  
   ```
-- objects:
+- [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+  - Objects are also a type of collection, but contain values stored as key-value pairs
+  - Objects are written using curly braces
   ```js
   let person = {
     age: 20,
