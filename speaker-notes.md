@@ -969,7 +969,44 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 
 ## Going further with JavaScript
 
-- Functions - bit of code you can reuse
+### Functions
+  - Functions are a named block of code that you write to perform an action, that you can reuse anywhere in your code
+  ```js
+  function sayHello() {
+    // your functions code goes inbetween the curly braces
+    console.log("Hello!")
+  }
+  ```
+  
+  - Functions are called/invoked by writing the name of the function followed by a pair of brackets
+  ```js
+  sayHello() // Hello!
+  ```
+  
+  - Functions can also be passed *parameters* which are values that can be used in the function to change its action
+  - You can pass as many parameters as you want to a function
+  ```js
+  // parameters are written between the brackets when you declare a function
+  function sayHello(name) {
+    console.log("Hello " + name + "!")
+  }
+  
+  // parameters are passed to the function by putting them inside the brackets
+  sayHello("James") // Hello James!
+  ```
+  
+  - Functions can also return values to the point that you called them
+  ```js
+  function total(num1, num2) {
+    // the return statement tells the function to end after this line, and return the value of the expression that comes after return
+    return num1 + num2
+  }
+  
+  total(10, 15) // this won't do anything!
+  
+  console.log(total(10, 15)) // 25
+  ```
+  
 - Including JS on the page with `<script>` tags
 - Explain DOM & interacting with it
 
