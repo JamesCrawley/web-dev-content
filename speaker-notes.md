@@ -7,6 +7,7 @@
 - [Introduction to CSS Flex](#introduction-to-css-flex)
 - [Introduction to JavaScript](#introduction-to-javascript)
   - [Expressions](#expressions)
+  - [Arrays](#arrays)
 
 ## Background on DSA & RPT
 
