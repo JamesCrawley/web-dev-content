@@ -882,11 +882,12 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 ### [Array Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Common_operations)
   - These are functions that you can perform on arrays, there are many of them, and the documentation in the link above is really helpful
   #### Looping through an array using *.forEach*
+  - Changes the original array
   ```js
   const fruits = ["apples", "oranges", "bananas", "grapes"]
   
-  // fruit represents the current element in the fruits array that is being iterated over
   fruits.forEach(fruit => {
+    // fruit represents the current element in the fruits array that is being iterated over
     // this code is run once for each element in the fruits array
     console.log("I like: " + fruit)
   })
