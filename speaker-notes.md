@@ -926,7 +926,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   - Creates a new array containing values that pass a condition
   
   ```js
-  const numbers = [12, 154, 288, 139, 23]
+  const numbers = [12, 154, 288, 100, 23]
   
   let numbersUnder100
   
@@ -934,6 +934,8 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // the condition here is that 'the number is less than 100'
     return number < 100
   })
+  
+  console.log(numbersUnder100) // [12, 23]
   ```
   
   - This can also be written in shorthand
