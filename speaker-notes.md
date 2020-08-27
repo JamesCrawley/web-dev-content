@@ -786,7 +786,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log((50 / 10) * 3) // 15
   ```
 
-#### [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
+#### [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators)
   - These are used to compare the values of two pieces of data
   ```js
   // equality operator, compare the values only, in JavaScript the number 20 and the string "20" are identical values
@@ -878,17 +878,17 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   console.log(canDrink) // Yes
   ```
-
+### [Array Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Common_operations)
+  - These are functions that you can perform on arrays, there are many of them, and the documentation in the link above is really helpful
+  
 ## Challenge 5 - Javascript Basics
-
-- Print out your name with a message (like 'Hello there <person>')
-- Create 2 variables, a & b and assign different numbers to them. Then do some multiplication, division, addition, and subtraction, with them.
-- Create a new variable, x, and assign it the number 2 like so: `const x = "20"`. Add that to one of your previous variables. What do you notice? Why do you think that is?
-- Create an array, filled with names, then use a loop to print out their name & the same message for each one. You should end up with something like "Hey bill", "Hey Fred", "Hey Sally", etc.
+- Print out your name with a message (like 'Hello there [your name]')
+- Create 2 variables, `a` & `b`, and assign different numbers to them. Then do some multiplication, division, addition, and subtraction, with them.
+- Create a new variable `x`, and assign it the number 20 like so: `const x = "20"`. Add that to one of your previous variables. What do you notice? Why do you think that is?
+- Create an array, filled with names, then use a loop to print out their name & the same message for each one. You should end up with something like "Hey Bill", "Hey Fred", "Hey Sally", etc.
 - Create a variable called age and assign it to your age. Use an if/else statement to tell you if you're allowed to legally drink
 - Create another variable called `likesBeer` and assign it to a boolean (true or false). Modify your existing loop so that if you're over 18 & like beer, it say you can drink. If not, print out a message to say no.
 - Using the following object, print out the ID & price of each item.
-
   ```js
   let items = [
     { id: 1, price: 20 },
@@ -901,7 +901,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 
 - Using the same object, sum the total cost of all items.
 
-  > note: there's (at least) 2 ways of doing this - if you're looking to stretch yourself, look at a `reduce()` function!
+  > There's (at least) 2 ways of doing this - if you're looking to stretch yourself, look at a `reduce()` function!
 
 - For an additional challenge - write a check for palindrome - taking a variable (such as `const input = "hello there") and returning (outputting) a "true" or "false". If it's the same in reverse it should tell you. e.g inputting "racecar" should output true, but "nope" should be false
 
