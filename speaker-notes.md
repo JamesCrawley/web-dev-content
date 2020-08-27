@@ -965,7 +965,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 
   > There's (at least) 2 ways of doing this - if you're looking to stretch yourself, look at the `Array.reduce()` function!
 
-- For an additional challenge - write a check for palindrome - taking a variable (such as `const input = "hello there") and returning (outputting) a `true` or `false`. If it's the same in reverse it should tell you. e.g inputting `"racecar"` should output `true`, but `"nope"` should be `false`
+- For an additional challenge - write a check for palindrome - taking a variable (such as `const input = "hello there"`) and returning (outputting) a `true` or `false`. If it's the same in reverse it should tell you. For example, inputting `"racecar"` should output `true`, but `"nope"` should be `false`
 
 ## Going further with JavaScript
 
