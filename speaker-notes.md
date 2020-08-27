@@ -2,9 +2,13 @@
 
 ## Contents
 - [Introduction to HTML](#introduction-to-html)
+  - [Challenge 1 - HTML](#challenge-1---html)
 - [Introduction to CSS](#introduction-to-css)
+  - [Challenge 2 - CSS](#challenge-2---css)
 - [Introduction to CSS Grid](#introduction-to-css-grid)
+  - [Challenge 3 - CSS Grid](#challenge-3---css-grid)
 - [Introduction to CSS Flex](#introduction-to-css-flex)
+  - [Challenge 4 - CSS Flex](#challenge-4---css-flex)
 - [Introduction to JavaScript](#introduction-to-javascript)
   - [Expressions](#expressions)
   - [Variables](#variables)
