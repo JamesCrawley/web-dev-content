@@ -7,7 +7,22 @@
 - [Introduction to CSS Flex](#introduction-to-css-flex)
 - [Introduction to JavaScript](#introduction-to-javascript)
   - [Expressions](#expressions)
+  - [Variables](#variables)
+  - [Data Types](#data-types)
   - [Arrays](#arrays)
+  - [Objects](#objects)
+  - [Outputting to the Console](#outputting-to-the-console)
+  - [Comments](#comments)
+  - [Operators](#operators)
+    - [Assignment Operators](#assignment-operators)
+    - [Arithmetic Operators](#arithmetic-operators)
+    - [Comparison Operators](#comparison-operators)
+    - [Relation Operators](#relational-operators)
+    - [Logic Operators](#logic-operators)
+  - [Conditional Statements](#conditional-statements)
+  - [JS Methods](#js-methods)
+- [Challenge 5 - JavaScript Basics](#challenge-5-javascript-basics)
+  
 
 ## Background on DSA & RPT
 
