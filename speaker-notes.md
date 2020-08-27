@@ -781,7 +781,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // 2 to the power of 3
   console.log(2 ** 3) // 8
 
-  // these can be chained up using brackets to change the [order of precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+  // these can be chained up using brackets to change the order of precedence
   // this evaluates as (5) * 3, then to 15
   console.log((50 / 10) * 3) // 15
   ```
