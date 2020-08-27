@@ -1038,7 +1038,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   - Using `document.querySelector` to find a single HTML element, and `document.querySelectorAll` to find multiple HTML elements
   ```js
   const myForm = document.querySelector(".my-form") // find the first HTML element with the class of .my-form
-  const allDivs = document.querySelectorAll("#el") // find all HTML <div> elements
+  const allDivs = document.querySelectorAll("div") // find all HTML <div> elements
   ```
   
   #### Creating a new HTML element
@@ -1074,7 +1074,8 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   }
   ```
   
-  - Async/await (explain async)
+  #### Asynchronous JavaScript
+  - Not everything in your code can happen one thing after the other, some things will have delays which can slow down your webpage so you'd want them to run concurrently
 
   ```js
   async function callAPI(query) {
