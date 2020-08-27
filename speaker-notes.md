@@ -1076,7 +1076,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
   
 ### Asynchronous JavaScript
-  - Not everything in your code happens instantly, some things will have delays which can slow down your webpage
+  - Not everything in your code happens instantly, some things will have delays which can cause issues in our code
   - An example of this is a HTTP request to a resource on another website, your code doesn't know how long it will take to resolve, or if it even will
   - If we run the code below, the `response` variable won't ever resolve to the data we want from tvmaze.com. It's basically told "You'll get some data eventually, but I don't know when", and because of that, the program carries on and it basically gets forgotten, This causes the `data` variable to throw an error because it can't work on the `response` variable properly
   ```js
