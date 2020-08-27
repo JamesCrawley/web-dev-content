@@ -587,11 +587,9 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     const canIDrive = true
     console.log(canIDrive ? "Yes!" : "No!") // Yes!
     // ^ we'll explain what this means later ^
-    - Array: (see below)
-    - Object: (see below)
     ```
 - [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-  - Arrays are a type of collection, essentially a list of elements
+  - Arrays are another data type, they are essentially a list of elements
   - Arrays can contain many different types
   - Each item in the array is called an *element*
   - Arrays are written using square brackets with commas to seperate the elements 
@@ -628,14 +626,24 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(myArray) // [1, 2, 3, 4, 5]
   ```
 - [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-  - Objects are also a type of collection, written using curly braces. They contain data stored as key-value pairs
+  - Objects are also another data type, written using curly braces. They contain data (known as *properties*) stored as key-value pairs
   ```js
   let person = {
-    age: 20,
-    name: "phil",
+    name: "James", // property called 'name' with the value of "James"
+    age: 20, // property called 'age' with the value of 20
   };
   ```
-  - Objects and Arrays are commonly used together to chain up complex amounts of data together
+  
+  - The properties of objects can be accessed and changed using the *dot notation*
+  ```js
+  console.log(person.name) // "James"
+  console.log(person.age) // 20
+  
+  person.age = 99 // set the age property to 99
+  console.log(person.age) // 99
+  ```
+  
+  - Objects and arrays are commonly used together to chain up complex amounts of data together
   ```js
   const james = {
     name: "James",
@@ -650,7 +658,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   }
   
   const people = [james, collwyn]
-  console.log(people) // copy this code into your browser's console and see what it returns
+  console.log(people) // copy/paste this section of code into your browser's console and see what it returns
   ```
 
 - Outputting to the console
