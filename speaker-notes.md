@@ -528,42 +528,21 @@ Add the `justify-content` property to the `my-flex` selector in `flex.css`, and 
 
 ## Introduction to JavaScript
 JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of the programming language, but there's lots more to be done independently
-- Data types
-  - Data types define the format that a piece of data is in. It can be from one of the folowing (as well as many more)
-    - String: Any form of text
-    ```js
-    const name = "James" // this is a string
-    console.log("My name is " + name) // James
-    ```
-    - Number: Any whole number
-    ```js
-    const age = 20 // this is a number
-    console.log("I am " + age + " years old")
-    ```
-    - Boolean: A true or false value
-    ```js
-    const canIDrive = true
-    console.log(canIDrive ? "Yes!" : "No :(") // we'll explain what this means later
-    ```
-- Outputting to console
+- Expressions
+  - Expressions are one of the fundamental principles behind JavaScript logic, essentially it is a bunch of *values* and *operators*, that result in a return value, here is a few examples:
   ```js
-  console.log(1 + 1) // 2
-  console.log("Hello world!") // Hello World!
-  console.log(50 + 50 === 100) // true
-  console.log([1, 2, 4, 5].includes(3)) // false
-  ```
-- Comments
-  - Double forward-slashes start a comment that you can use to annotate and describe your code
-  ```js
-  // this is a comment and won't affect the code in any way!
-  const number = 5
-  console.log(number) // 5
+  const myName = "James" // this is a variable callde myName with the value of "James"
   
-  // number = 10
-  console.log(number) // 5
+  // this is an expression that returns the value "My name is James"
+  "My name is " + myName
+  
+  // this is also an expression, but returns the value 19
+  9 + 19
   ```
-- Variables
+- Variables & data types
   - Variables can be looked at as pockets where you can store data, identified by their unique names
+  - The data that variables store can be in many different data types, such as *strings*, *numbers* and *booleans* to name a few
+  - Unlike other programming languages, in JavaScript you don't need to tell the code what data types you want your variables to be. This led to the creation of the [TypeScript](https://www.typescriptlang.org/) language created by Microsoft
   - To create a variable you need to know:
     - Whether to use *const* or *let* (does the variable need to change at any point or not)
     - The name of the variable
@@ -591,24 +570,64 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(myVariable) // Hello World!
     ```
     - var (we don't use this one since let was introduced)
+- Data types
+  - Data types define the format that a piece of data is in. It can be from one of the folowing (as well as many more)
+    - String: Any form of text
+    ```js
+    const name = "James" // this is a string
+    console.log("My name is " + name) // James
+    ```
+    - Number: Any whole number
+    ```js
+    const age = 20 // this is a number
+    console.log("I am " + age + " years old")
+    ```
+    - Boolean: A true or false value
+    ```js
+    const canIDrive = true
+    console.log(canIDrive ? "Yes!" : "No!") // Yes!
+    // ^ we'll explain what this means later ^
+    ```
+- Outputting to the console
+  ```js
+  console.log(1 + 1) // 2
+  console.log("Hello world!") // Hello World!
+  console.log(50 + 50 === 100) // true
+  console.log([1, 2, 4, 5].includes(3)) // false
+  ```
+- Comments
+  - Double forward-slashes start a comment that you can use to annotate and describe your code
+  ```js
+  // this is a comment and won't affect the code in any way!
+  const number = 5
+  console.log(number) // 5
+  
+  // number = 10
+  console.log(number) // 5
+  ```
 - Operators
   - [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
     - These are used to change the value of a variable 
     ```js
     let myNumber = 0;
-
+    
+    // assignment (=)
     myNumber = 5 // set myNumber to 5
     console.log(myNumber) // 5
-
+    
+    // addition assignment (+=)
     myNumber += 7 // add 7 to myNumber
     console.log(myNumber) // 12
-
+    
+    // subtraction assignment (-=)
     myNumber -= 2 // minus 2 from myNumber
     console.log(myNumber) // 10
-
+    
+    // multiplication assignment (*=)
     myNumber *= 5 // multiply myNumber by 5
     console.log(myNumber) // 50
-
+    
+    // division assignment (/=)
     myNumber /= 2 // divide myNumber by 2
     console.log(myNumber) // 
     ```
@@ -639,6 +658,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log((50 / 10) * 3) // 15
     ```
   - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
+    - These are used to compare the values of two pieces of data
     ```js
     // equality operator, compare the values only, in JavaScript the number 20 and the string "20" are identical values
     console.log(10 == "10") // true
@@ -654,16 +674,35 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // use this operator 99% of the time instead of the inequality operator
     console.log(10 !== "10") // true
     ```
-  - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators) (<, >, =<, >=)
+  - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators)
+    ```js
+    // less than operator (<)
+    console.log(5 < 8) // true
+    console.log(10 < 6) // false
+    
+    // less than or equal to operator (<=)
+    console.log(7 <= 7) // true
+    console.log(7 <= 9) // false
+    
+    // greater than operator (>)
+    console.log(2 > -6) // true
+    console.log(10 > 20) // false
+    
+    // greater than or equal to operator (>=)
+    console.log(9 >= 2) // true
+    console.log(4 >= -7) // false
+    ```
   - [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
     ```js
     const myName = "James"
     const myAge = 20
     
-    // AND operator, both expressions have to be true for this statement to return true
+    // AND operator (&&)
+    // both expressions have to be true for this statement to return true
     console.log(myName === "James" && myAge > 20) // false
     
-    // OR operator, one or more expression has to be true for this statement to return true
+    // OR operator (||)
+    // one or more of these expressions has to be true for this statement to return true
     console.log(myName === "James" || myAge > 20) // true
     ```
 - Conditional statements
@@ -688,9 +727,11 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   }
   ```
   - In some situations you might want to have all of this logic on one line, for this you can use ternary expressions
+  - Ternary expressions are written with `?` and `:` like this: `const returnValue = [expression] ? [value if true] : [value if false]`
   ```js
   const age = 20
-  const canIDrink = age >= 18 ? "Yes" : "No" 
+  const canIDrink = age >= 18 ? "Yes" : "No"
+  
   // this is literally 'if age is 18 or over, return "Yes", else return "No"'
   // equivalent to:
   // if (age >= 18) {
