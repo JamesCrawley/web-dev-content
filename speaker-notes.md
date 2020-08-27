@@ -528,6 +528,7 @@ Add the `justify-content` property to the `my-flex` selector in `flex.css`, and 
 
 ## Introduction to JavaScript
 JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of the programming language, but there's lots more to be done independently
+
 - Expressions
   - Expressions are one of the fundamental principles behind JavaScript logic, essentially it is a bunch of *values* and *operators*, that result in a return value, here is a few examples:
   ```js
@@ -539,14 +540,21 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   // this is also an expression, but returns the value 19
   9 + 19
   ```
+  
 - Variables
   - Variables can be looked at as pockets where you can store data, identified by their unique names
+  
   - The data that variables store can be in many different data types (see section )below, such as *strings*, *numbers* and *booleans* to name a few
+  
   - Unlike other programming languages, in JavaScript you don't need to tell the code what data types you want your variables to be. This led to the creation of the [TypeScript](https://www.typescriptlang.org/) language created by Microsoft
+  
   - To create a variable you need to know:
     - Whether to use *const* or *let* (does the variable need to change at any point or not)
+    
     - The name of the variable
+    
     - (Optional) A value to give to the variable
+    
   - How to create a variable:
     ```js
     // [const or let] [variable name] = [variable value]
@@ -561,6 +569,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
 
     const myName; // SyntaxError: Missing initializer in const declaration
     ```
+    
     - let
     ```js
     let myVariable = "Hello!"
@@ -570,6 +579,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(myVariable) // Hello World!
     ```
     - var (we don't use this one since let was introduced)
+    
 - Data types
   - Data types define the format that a piece of data is in. It can be from one of the folowing (as well as many more)
     - String: Any form of text
@@ -588,20 +598,26 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(canIDrive ? "Yes!" : "No!") // Yes!
     // ^ we'll explain what this means later ^
     ```
+    
 - [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
   - Arrays are another data type, they are essentially a list of elements
+  
   - Arrays can contain many different types
+  
   - Each item in the array is called an *element*
+  
   - Arrays are written using square brackets with commas to seperate the elements 
   ```js
   const myArray = ["Apple", 5, true, "Orange"]
   ```
+  
   - Each element has an index (position in the array) starting at 0. The first element is index 0, the second is index 1 etc. Here is how you would index each element of the array:
   ```js
   console.log(myArray[0]) // Apple
   console.log(myArray[2]) // true
   console.log(myArray[4]) // undefined (index 4, the 5th element doesn't exist)
   ```
+  
   - There are many methods you can use to modify arrays:
   ```js
   const myArray = [1, 2, 3, 4, 5]
@@ -625,6 +641,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(myArray.shift()) // 0
   console.log(myArray) // [1, 2, 3, 4, 5]
   ```
+  
 - [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
   - Objects are also another data type, written using curly braces. They contain data (known as *properties*) stored as key-value pairs
   ```js
@@ -668,17 +685,34 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   console.log(50 + 50 === 100) // true
   console.log([1, 2, 4, 5].includes(3)) // false
   ```
-- Comments
-  - Double forward-slashes start a comment that you can use to annotate and describe your code
+  
+- [Comments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Comments)
+  - Comments are used to annotate and describe your code
+  
+  - Single line comments are written using double forward-slashes 
   ```js
   // this is a comment and won't affect the code in any way!
-  const number = 5
+  let number = 5
   console.log(number) // 5
   
   // number = 10
   console.log(number) // 5
   ```
-- Operators
+  
+  - Multi-line comments are written using a forward slash and an asterisk (/\*) and the reverse to close it (\*/)
+  ```js
+  let number = 5
+  console.log(number) // 5
+  
+  /*
+  number = 6
+  number = 7
+  number = 9
+  */
+  console.log(number) // 5
+  ```
+  
+- [Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
   - [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
     - These are used to change the value of a variable 
     ```js
@@ -704,6 +738,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     myNumber /= 2 // divide myNumber by 2
     console.log(myNumber) // 
     ```
+    
   - [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators)
     ```js
     // addition (+)
@@ -730,6 +765,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // this evaluates as (5) * 3, then to 15
     console.log((50 / 10) * 3) // 15
     ```
+    
   - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Equality_operators) (==, !=, ===, !==)
     - These are used to compare the values of two pieces of data
     ```js
@@ -747,6 +783,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // use this operator 99% of the time instead of the inequality operator
     console.log(10 !== "10") // true
     ```
+    
   - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Relational_operators)
     ```js
     // less than operator (<)
@@ -765,6 +802,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     console.log(9 >= 2) // true
     console.log(4 >= -7) // false
     ```
+    
   - [Logic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Binary_logical_operators)
     ```js
     const myName = "James"
@@ -778,6 +816,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // one or more of these expressions has to be true for this statement to return true
     console.log(myName === "James" || myAge > 20) // true
     ```
+    
 - Conditional statements
   - These are used to run a block of code depending on the truthiness of an expression
   ```js
@@ -787,6 +826,7 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // otherwise, do this
   }
   ```
+  
   - Can use any number of *else if* blocks inbetween the *if* and *else*
   ```js
   const myName = "James"
@@ -799,7 +839,9 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
     // run code if name is anything else
   }
   ```
+  
   - In some situations you might want to have all of this logic on one line, for this you can use ternary expressions
+  
   - Ternary expressions are written with `?` and `:` like this: `const returnValue = [expression] ? [value if true] : [value if false]`
   ```js
   const age = 20
@@ -815,7 +857,9 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   
   console.log(canIDrink) // Yes
   ```
+  
   - .forEach() (depending on how confident people are)
+  
 - JS methods - look on w3schools for methods (e.g. `.length`,`.indexOf(substr)`)
 
 ## Challenge 5 - Javascript Basics
