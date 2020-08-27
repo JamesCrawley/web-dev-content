@@ -1075,8 +1075,19 @@ JavaScript makes the web interactive. It's _not_ java! We'll teach the basics of
   ```
   
 ### Asynchronous JavaScript
-  - Not everything in your code can happen one thing after the other, some things will have delays which can slow down your webpage so you'd want them to run concurrently
-
+  - Not everything in your code can happen one thing after the other, some things will have delays which can slow down your webpage, so you'd want them to run concurrently
+  - An example of this is a HTTP request to a resource on another website, your code doesn't know how long it will take to resolve, or if it even will
+  - If we run the code below, the response variable won't ever resolve to the data we want from tvmaze.com. It's basically told "You'll get some data eventually, but I don't know when", and because of that the program carries on and it basically gets forgotten 
+  ```js
+  function callAPI(query) {
+  // we can use the fetch function to make a HTTP GET request to the URL we give it
+    const response = fetch(`http://api.tvmaze.com/search/shows?q=${query}`); // make API call
+    console.log(response) // Promise {<pending>}
+  }
+  ```
+  
+  - You can tell your code to make the request, carry on with the rest of your code, and when the data is returned, go back and run a piece of code
+  
   ```js
   async function callAPI(query) {
     // run inside an async function
