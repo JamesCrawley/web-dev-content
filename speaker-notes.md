@@ -344,7 +344,7 @@ Let's start by setting up our files!
 2. Open up VSCode
 3. Click on 'File' at the top of VSCode and click 'Open...'
 4. Navigate to and click on the folder you created (make sure you don't go into the folder!), and click 'Open'
-5. In this sidebar you'll see a few icons, once will create a new **file** and one will create a new **folder**
+5. In this sidebar you'll see a few icons, one will create a new **file** and one will create a new **folder**
    ![](https://imgur.com/NCJS13H.png)
 6. Create two new files called **grid.html** and **grid.css**, these will be the two files that we write our CSS Grid code in!
 
